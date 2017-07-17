@@ -50,7 +50,6 @@
       user_id: "user_id1",
       brewery_id: "brewery_id1",
       beer_id: "beer1",
-      rating_id: "rating_id1"
       image_url: "string"
     }
   }
@@ -59,6 +58,7 @@
     "rating_review1": {
       id: "rating_review1",
       beer_id: "beer1",
+      checkin_id: "checkin1"
       rating: "integer",
       review: "text"
     }

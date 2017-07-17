@@ -45,15 +45,14 @@ id          | integer   | not null, primary key
 user_id     | integer   | not null, foreign key (references users), indexed
 brewery_id  | integer   | foreign key (references breweries), indexed
 beer_id     | integer   | not null, foreign key (references beers), indexed
-rating_id   | integer   | not null, foreign key (references beers), indexed
 image_url   | string    |
 
 ## ratings/reviews
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-user_id     | integer   | not null, foreign key (references users), indexed
 beer_id     | integer   | not null, foreign key (references beers), indexed
+checkin_id  | integer   | not null, foreign key (references checkins), indexed
 rating      | integer   | not null
 review      | text      |
 
