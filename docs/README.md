@@ -1,23 +1,19 @@
 # Beertendr
 
 [Heroku Link][heroku]
+[Trello Link][trello]
 [heroku]: https://beertendr.herokuapp.com/
+[trello]: https://beertendr.herokuapp.com/
 
 ## Minimum Viable Product
 Beertendr is a web application inspired by Untappd and Beer Advocate. It is built using Ruby on Rails and React/Redux. By the end of week nine, this app will, at a minimum, satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
 
 - New account creation, login, and guest/demo login
-
 - A production README
-
 - Hosting on Heroku
-
 - Drinks CRUD
-
 - Checkins / reviews
-
 - Review feed
-
 - Profile
 
 ## Design Docs
@@ -25,8 +21,14 @@ Beertendr is a web application inspired by Untappd and Beer Advocate. It is buil
 
 [Wireframes][wireframes]
 
+[React Components][react_components]
+
+[API Endpoints][api_endpoints]
+
 [wireframes]: /docs/wireframes
+[react_components]: /docs/react_components.md
 [schema]: /docs/db_schema.md
+[api_endpoints]: /docs/api_endpoints.md
 
 ## Timeline
 ### Phase 1: Back end setup and front end user authentication (2 days)
