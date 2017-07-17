@@ -13,7 +13,6 @@
           l_name: "Comings",
           image_url: "string",
           about: "text"
-          checkins: ["checkin1", "checkin2"]
         }
     }
     allIds: ["user1", "user2"]
@@ -43,6 +42,7 @@
         name: "Bump City",
         type: "beer and cider",
         country: "United States",
+        address: "123 Beer Ln"
         city: "Oakland",
         state: "California",
         website: "bumpcitybrewing.com",

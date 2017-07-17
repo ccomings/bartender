@@ -9,9 +9,7 @@
 
 ### Users
 - `POST /api/users`
-- `GET /api/users/:id`
-- `PATCH /api/users/:id`
-- `DELETE /api/users/id`
+- `GET /api/users`
 
 ### Session
 - `POST /api/session`

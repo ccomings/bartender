@@ -23,7 +23,7 @@ description     | text      | not null
 brewery_id      | integer   | not null, foreign key (references breweries)
 abv             | float     | not null
 ibu             | float     | not null
-style           | string    | not null
+style_id        | integer   | not null
 image_url       | string    |
 
 ## breweries
@@ -56,3 +56,16 @@ user_id     | integer   | not null, foreign key (references users), indexed
 beer_id     | integer   | not null, foreign key (references beers), indexed
 rating      | integer   | not null
 review      | text      |
+
+## beer/style join
+column name | data type | details
+------------|-----------|-------------------
+id          | integer   | not null, primary key
+beer_id     | integer   | not null
+style_id    | integer   | not null
+
+## styles
+column name | data type | details
+------------|-----------|-------------------
+id          | integer   | not null, primary key
+style       | string    | not null
