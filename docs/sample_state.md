@@ -30,6 +30,7 @@
         ibu: "50",
         style: "Porter",
         image_url: "string"
+        ratings_reviews: ["rating_review1", "rating_review2"]
       }
     }
     allIds: ["beer1", "beer2"]
@@ -50,6 +51,32 @@
       }
     }
     allIds: ["brewery1", "brewery2"]
+  }
+
+  checkins: {
+    byId: {
+      "checkin1": {
+        id: "checkin1",
+        user_id: "user_id1",
+        brewery_id: "brewery_id1",
+        beer_id: "beer1",
+        rating_id: "rating_id1"
+        image_url: "string"
+      }
+    }
+    allIds: ["checkin1", "checkin2"]
+  }
+
+  ratings_reviews: {
+    byId: {
+      "rating_review1": {
+        id: "rating_review1",
+        beer_id: "beer1",
+        rating: "integer",
+        review: "text"
+      }
+    }
+    allIds: ["rating_review1", "rating_review2"]
   }
 }
 ```
