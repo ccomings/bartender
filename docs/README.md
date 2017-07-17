@@ -1,8 +1,9 @@
 # Beertendr
 
-[Heroku Link][heroku]
+[Heroku][heroku]
 
-[Trello Link][trello]
+[Trello][trello]
+
 [heroku]: https://beertendr.herokuapp.com/
 [trello]: https://trello.com/b/gZk5OiWV/beertendr
 
@@ -26,10 +27,13 @@ Beertendr is a web application inspired by Untappd and Beer Advocate. It is buil
 
 [API Endpoints][api_endpoints]
 
+[Sample State][sample_state]
+
 [wireframes]: /docs/wireframes
 [react_components]: /docs/react_components.md
 [schema]: /docs/db_schema.md
 [api_endpoints]: /docs/api_endpoints.md
+[sample_state]: /docs/sample_state.md
 
 ## Timeline
 ### Phase 1: Back end setup and front end user authentication (2 days)
