@@ -25,7 +25,7 @@ export const logout = () => dispatch (
   ))
 );
 
-export const receiveErrors = errors ({
+export const receiveErrors = errors => ({
   type: RECEIVE_ERRORS,
   errors
 });
