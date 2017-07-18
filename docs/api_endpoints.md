@@ -18,6 +18,7 @@
 ### Checkins
 - `GET /api/checkins`
 - `POST /api/checkins`
+
 bonus
 - `DELETE /api/checkins/:id`
 - `PATCH /api/checkins/:id`
