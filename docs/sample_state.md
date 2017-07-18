@@ -25,7 +25,6 @@
       ibu: "50",
       style: "Porter",
       image_url: "string"
-      ratings_reviews: ["rating_review1", "rating_review2"]
     }
   }
 
@@ -40,7 +39,6 @@
       state: "California",
       website: "bumpcitybrewing.com",
       image_url: "string",
-      beers: ["beer1", "beer3", "beer80"],
     }
   }
 

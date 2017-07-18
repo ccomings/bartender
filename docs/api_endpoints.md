@@ -17,16 +17,14 @@
 
 ### Checkins
 - `GET /api/checkins`
-- `GET /api/beer/:id/checkins`
-- `GET /api/user/:id/checkins`
-- `GET /api/breweries/:id/checkins`
-- `POST /api/beer/:id/checkins`
+- `POST /api/checkins`
+bonus
 - `DELETE /api/checkins/:id`
+- `PATCH /api/checkins/:id`
 
 ### Beers
 - `GET /api/beers`
 - `GET /api/beers/:id`
-- `GET /api/breweries/:id/beers`  
 - `POST /api/beers`
 - `PATCH /api/beers/:id`
 
