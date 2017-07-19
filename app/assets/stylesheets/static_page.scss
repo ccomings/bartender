@@ -1,3 +1,95 @@
 // Place all the styles related to the StaticPage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  background-image: url(http://res.cloudinary.com/dkeart1zy/image/upload/v1500499040/giphy_ibhdli.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100%;
+  background-position: center;
+
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  width: 100%
+}
+
+body {
+  // background-color: #E0D164
+}
+
+.login-form-container {
+  border: solid 1px black;
+  background-color: #E0D164
+
+}
+
+.login-form {
+  border: solid 1px black;
+
+}
+
+.login-input {
+  border: solid 1px black;
+
+}
+
+.demo-login {
+  border: solid 1px black;
+
+}
+
+.login-form-box {
+  border: solid 1px black;
+
+}
+
+.login-signup {
+  border: solid 1px black;
+
+}
+
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 1px black;
+
+}
+
+.square-buttons {
+  border: solid 1px black;
+
+}
+
+.circle-buttons {
+  border: solid 1px black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar-right-side {
+  display: flex;
+  align-items: center;
+}

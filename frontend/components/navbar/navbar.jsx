@@ -3,28 +3,39 @@ import { Link } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="login-signup">
+    <h1>Beertendr</h1>
     <Link to='/login'>Login</Link>
     &nbsp;or&nbsp;
     <Link to='/signup'>Sign up!</Link>
   </nav>
 );
 
-const navBar = (currentUser, logout) => (
+const navBar = (currentUser, logout, history) => (
   <nav className="navbar_container">
-    <h2>Hi, {currentUser.username}!</h2>
-    <button className='circle-buttons'onClick={logout}>Log Out</button>
+    <div>
+      <button className='square-buttons' onClick={() => {
+          history.push('/beers');
+        }}>Beers</button>
+      <button className='square-buttons' onClick={() => {
+          history.push('/breweries');
+        }}>Breweries</button>
+      <button className='square-buttons' onClick={() => {
+          history.push('/checkin');
+        }}>Checkin</button>
+    </div>
+    <h1>Beertendr</h1>
+    <div className="navbar-right-side">
+      <h3>Hi, {currentUser.username}!</h3>
+      <button className='circle-buttons' onClick={() => {
+          history.push('/profile');
+        }}>Profile</button>
+      <button className='circle-buttons'onClick={logout}>Log Out</button>
+    </div>
   </nav>
 );
 
-const Navbar = ({ currentUser, logout }) => (
-  currentUser ? navBar(currentUser, logout) : sessionLinks()
+const Navbar = ({ currentUser, logout, history }) => (
+  currentUser ? navBar(currentUser, logout, history) : sessionLinks()
 );
 
 export default Navbar;
-// <!--
-// <button className='square-buttons' onClick={}>Beers</button>
-// <button className='square-buttons' onClick={}>Breweries</button>
-// -->    <!--
-//     <button className='circle-buttons' onClick={}>CheckIn</button>
-//     <button className='circle-buttons' onClick={}>Profile</button>
-//     -->
