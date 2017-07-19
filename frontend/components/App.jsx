@@ -12,10 +12,12 @@ const App = () => (
   <div>
     <header>
       <NavbarContainer />
+    </header>
+    <div className="app-page-container">
       <ProtectedRoute path="/" component={Placeholder} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
-    </header>
+    </div>
   </div>
 );
 

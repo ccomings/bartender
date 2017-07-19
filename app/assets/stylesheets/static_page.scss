@@ -9,6 +9,8 @@ html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, asid
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -38,11 +40,13 @@ body {
   // background-color: #E0D164
 }
 
+
 .login-form-container {
   border: solid 1px black;
   background-color: #E0AB64;
   opacity: .5;
-
+  margin-top: 10%;
+  padding: 5px;
 }
 
 .login-form {
@@ -67,6 +71,8 @@ body {
 
 .login-signup {
   border: solid 1px black;
+  background-color: #E0AB64;
+  opacity: .5;
 
 }
 
@@ -102,5 +108,17 @@ body {
 }
 
 .logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-items {
+
+}
+
+.app-page-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
+
 }
