@@ -13,6 +13,9 @@ const sessionLinks = () => (
 const navBar = (currentUser, logout, history) => (
   <nav className="navbar_container">
     <div className="navbar-items">
+      <h1 className="logo">Beertendr</h1>
+    </div>
+    <div className="navbar-items">
       <button className='square-buttons' onClick={() => {
           history.push('/beers');
         }}>Beers</button>
@@ -23,10 +26,7 @@ const navBar = (currentUser, logout, history) => (
           history.push('/checkin');
         }}>Checkin</button>
     </div>
-    <div className="navbar-items">
-      <h1 className="logo">Beertendr</h1>
-    </div>
-    <div className="navbar-items" className="navbar-right-side">
+    <div className="navbar-items navbar-right-side">
       <h3 className="greeting">Hi, {currentUser.username}!</h3>
       <button className='circle-buttons' onClick={() => {
           history.push('/profile');

@@ -44,55 +44,65 @@ body {
 .login-form-container {
   border: solid 1px black;
   background-color: #E0AB64;
-  opacity: .5;
-  margin-top: 10%;
+  opacity: .78;
+  margin: auto;
+  margin-top: 20%;
   padding: 5px;
 }
 
-.login-form {
-  border: solid 1px black;
-
+.session-login-form {
+  // border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .login-input {
-  border: solid 1px black;
+  // border: solid 1px black;
 
+}
+
+.login-input-submit{
+  align-self: center;
+  align-self: stretch;
 }
 
 .demo-login {
-  border: solid 1px black;
-
+  // border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-form-box {
-  border: solid 1px black;
+  // border: solid 1px black;
 
 }
 
 .login-signup {
-  border: solid 1px black;
+  // border: solid 1px black;
   background-color: #E0AB64;
-  opacity: .5;
+  opacity: .78;
 
 }
 
 .navbar_container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  border: solid 1px black;
-
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .square-buttons {
-  border: solid 1px black;
+  // border: solid 1px black;
   height: 50px;
-  width: 100px;
+  width: 33%;
 
 }
 
 .circle-buttons {
-  border: solid 1px black;
+  // border: solid 1px black;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -101,6 +111,7 @@ body {
 .navbar-right-side {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .greeting {
@@ -113,12 +124,11 @@ body {
 }
 
 .navbar-items {
-
+  flex: 1;
 }
 
 .app-page-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
