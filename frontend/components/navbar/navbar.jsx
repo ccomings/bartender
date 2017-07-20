@@ -11,10 +11,10 @@ const sessionLinks = () => (
 
 const navBar = (currentUser, logout, history) => (
   <nav className="navbar_container">
-    <div className="navbar-items">
+    <div className="navbar-items navbar-left-side">
       <img className="logo" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500518586/Screen_Shot_2017-07-19_at_7.41.37_PM_s94bef.png"/>
     </div>
-    <div className="navbar-items">
+    <div className="navbar-items navbar-middle-side">
       <button className='square-buttons' onClick={() => {
           history.push('/beers');
         }}>Beers</button>
@@ -26,7 +26,7 @@ const navBar = (currentUser, logout, history) => (
         }}>Checkin</button>
     </div>
     <div className="navbar-items navbar-right-side">
-      <h3 className="greeting">Hi, {currentUser.username}!</h3>
+      <h3 className="greeting">Prost, {currentUser.username}!</h3>
       <button className='circle-buttons' onClick={() => {
           history.push('/profile');
         }}>Profile</button>

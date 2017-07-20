@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
+html, body, div, span, button, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,6 +21,13 @@ html {
   height: 100%;
   background-position: center;
 
+}
+button {
+  border: 2px solid grey;
+}
+
+button:hover {
+  background-color: #E0AB64;
 }
 
 body {
@@ -71,6 +78,13 @@ h3 {
   // border: solid 1px black;
   display: flex;
   flex-direction: column;
+}
+
+.navbar-middle-side {
+  // align-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .login-input {
@@ -128,9 +142,10 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #E0AB64;
+  background-color: #7d8a1d;
   opacity: .78;
   border: 2px solid grey;
 
@@ -140,8 +155,9 @@ h3 {
 .square-buttons {
   // border: solid 1px black;
   height: 50px;
-  width: 33%;
-
+  width: 25%;
+  background-color: #E0D164;
+  // margin: 5;
 }
 
 .circle-buttons {
@@ -149,12 +165,16 @@ h3 {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  margin-left: 5px;
+  opacity: inherit;
+  background-color: #E0D164;
 }
 
 .navbar-right-side {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 .greeting {
