@@ -14,7 +14,7 @@
 #
 
 class Brewery < ApplicationRecord
-  validates :name, :country, :city, :state
+  validates :name, :country, :city, :state, presence: true
 
   has_many :beers
 end

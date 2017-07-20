@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170720182525) do
+ActiveRecord::Schema.define(version: 20170720190157) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20170720182525) do
   create_table "beer_styles", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "beer_id"
-    t.integer "style_id"
+    t.integer "beer_id", null: false
+    t.integer "style_id", null: false
   end
 
   create_table "beers", force: :cascade do |t|
@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20170720182525) do
     t.integer "brewery_id", null: false
     t.string "abv"
     t.string "ibu"
-    t.integer "beer_style_id", null: false
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -48,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170720182525) do
   create_table "styles", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "style"
+    t.string "style", null: false
   end
 
   create_table "users", force: :cascade do |t|
