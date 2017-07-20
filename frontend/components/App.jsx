@@ -7,6 +7,7 @@ import NavbarContainer from './navbar/navbar_container';
 import SessionFormContainer from './session_form/session_form_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import Placeholder from './placeholder';
+import BreweryIndexContainer from './breweries/breweries_index';
 
 const App = () => (
   <div>
@@ -15,6 +16,7 @@ const App = () => (
     </header>
     <div className="app-page-container">
       <ProtectedRoute path="/" component={Placeholder} />
+      <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
     </div>
