@@ -1,11 +1,11 @@
-export const fetchBreweries = () => (
+export const fetchAllBreweries = () => (
   $.ajax({
     method: 'GET',
     url: '/api/breweries',
   })
 );
 
-export const fetchBrewery = id => (
+export const fetchOneBrewery = id => (
   $.ajax({
     method: 'GET',
     url: `/api/breweries/${id}`,

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     # resources :checkins, only: [:index, :create]
     # resources :beers, only: [:index, :show, :create, :edit]
-    # resources :breweries, only: [:index, :show, :create, :edit]
+    resources :breweries, only: [:index, :show, :create, :edit]
   end
   root 'static_pages#root'
 end
