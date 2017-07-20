@@ -3,17 +3,16 @@ import { Link } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <h1>Beertendr</h1>
-    <Link to='/login'>Login</Link>
-    &nbsp;or&nbsp;
-    <Link to='/signup'>Sign up!</Link>
+    <Link to='/login'><h2>Login</h2></Link>
+    <img className="logo" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500518586/Screen_Shot_2017-07-19_at_7.41.37_PM_s94bef.png"/>
+    <Link to='/signup'><h2>Sign up</h2></Link>
   </nav>
 );
 
 const navBar = (currentUser, logout, history) => (
   <nav className="navbar_container">
     <div className="navbar-items">
-      <h1 className="logo">Beertendr</h1>
+      <img className="logo" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500518586/Screen_Shot_2017-07-19_at_7.41.37_PM_s94bef.png"/>
     </div>
     <div className="navbar-items">
       <button className='square-buttons' onClick={() => {
