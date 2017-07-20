@@ -54,12 +54,19 @@ body {
   // border: solid 1px black;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .login-input {
   // border: solid 1px black;
-
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .login-input-submit{
@@ -116,6 +123,19 @@ body {
 
 .greeting {
   margin: 5px;
+}
+
+.icon {
+  height: 22px;
+  width: 22px;
+}
+
+.login-input-container{
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid grey;
 }
 
 .logo {

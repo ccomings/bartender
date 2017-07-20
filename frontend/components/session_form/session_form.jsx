@@ -68,14 +68,16 @@ class SessionForm extends React.Component {
           Please {this.props.formType} or {this.navLink()}
           {this.renderErrors()}
           <div className='session-login-form'>
-            <label>Username:
+            <label className='login-input-container'>
+              <img className="icon" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500510869/user-128_ca6n7v.png"/>
               <input type='text'
                 value={this.state.username}
                 onChange={this.update('username')}
                 className='login-input'
               />
             </label>
-            <label>Password:
+            <label className='login-input-container'>
+              <img className="icon" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500510911/18799-200_dge9mv.png"/>
               <input type='password'
                 value={this.state.password}
                 onChange={this.update('password')}
