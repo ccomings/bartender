@@ -21,4 +21,4 @@ export const receiveAllBreweries = breweries => ({
 export const receiveOneBrewery = brewery => ({
   type: RECEIVE_ONE_BREWERY,
   brewery
-});
+}); 
