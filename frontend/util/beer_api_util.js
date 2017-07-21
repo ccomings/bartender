@@ -28,7 +28,7 @@ export const editBeer = beer => (
   })
 );
 
-export const deleteBeer = id => (
+export const removeBeer = id => (
   $.ajax({
     method: 'DELETE',
     url: `/api/beers/${id}`
