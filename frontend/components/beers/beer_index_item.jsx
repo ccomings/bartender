@@ -12,7 +12,6 @@ class BeerIndexItem extends React.Component{
         <Link to={`/beers/${this.props.id}`}>
           <ul>
             <li><h4>{this.props.beer.name}</h4></li>
-            <li><h4>{this.props.beer.description}</h4></li>
             <li><h4>{this.props.beer.brewery.name}</h4></li>
             <li><h4>{this.props.beer.abv}</h4></li>
             <li><h4>{this.props.beer.ibu}</h4></li>
