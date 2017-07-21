@@ -21,6 +21,13 @@ Beer.create!(name: 'Make America Wheat Beer Again', description: 'light and cris
 Beer.create!(name: 'Double Pale Ale', description: 'boozy like it should be', brewery_id: 1, abv: "7.1%", ibu: "80", image_url: "")
 Beer.create!(name: 'IPA', description: 'standard go to ipa', brewery_id: 1, abv: "7%", ibu: "85", image_url: "")
 Beer.create!(name: 'No Way Gose', description: 'salty, limey, and light', brewery_id: 1, abv: "4%", ibu: "30", image_url: "")
+Beer.create!(name: 'East Bay IPA', description: 'Welcome to the sunny side of the Bay! We brew this West Coast IPA with a rich malt bill and hella hops. Pairs well with good times, close friends, and new adventures.', brewery_id: 2, abv: "7.75%", ibu: "", image_url: "")
+Beer.create!(name: 'Beast Oakland', description: 'Our innovative, collaborative spirit is highlighted by this homage to everything Oakland-made. Beast Oakland is crisp and refreshing. We partner with a grassroots clothing store located in the Laurel District of Oakland for this incredible bottle art. Beast Oakland plays a key role in supporting youth education in our growing community.', brewery_id: 2, abv: "4.5%", ibu: "", image_url: "")
+Beer.create!(name: 'Cherry Kush', description: 'Cherry Kush is a twist on our Golden State of Mind. This "California Tea Beer" is brewed without hops and with fresh, organic, tart cherry juice. We blend the cherry with our Golden State of Mind for a subtle sweetness.', brewery_id: 2, abv: "4.4%", ibu: "", image_url: "")
+Beer.create!(name: 'Golden State of Mind', description: 'Golden State of Mind is a unique creation. We have called it a "California Tea Beer" due to its construction using local California ingredients, from the oats, barley, and wheat to the fresh coriander, chamomile, and sweet orange peel. This gives Golden State of Mind its smooth, dry, bready malt character with earthy, spice notes and hints of citrus. A true taste of California in all its beauty, the Golden State of Mind is also a Gruit – meaning it is made without hops.', brewery_id: 2, abv: "4.4%", ibu: "", image_url: "")
+Beer.create!(name: 'GOLDEN STAVE', description: 'Golden ale aged in High West rye whiskey barrels. Tasting notes: Honey, oak, pears, spices', brewery_id: 3, abv: "", ibu: "", image_url: "")
+Beer.create!(name: 'MAPLE TRIPEL', description: 'Belgian-style ale barrel aged with maple syrup. Tasting notes: Maple, oak, vanilla, brown sugar', brewery_id: 3, abv: "", ibu: "", image_url: "")
+Beer.create!(name: 'SAISON', description: 'Bright farmhouse ale with tropical flavors. Tasting notes: Mango, pepper, light, quenching', brewery_id: 3, abv: "", ibu: "", image_url: "")
 
 beer_styles = ["Ale", "Altbier", "Amber", "American", "Bock",
   "Cream", "Czech", "Dark", "Dunkles",

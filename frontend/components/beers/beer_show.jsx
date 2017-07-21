@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Route } from 'react-router-dom';
+import { withRouter, Rout, Link } from 'react-router-dom';
 
 class BeerShow extends React.Component {
   constructor(props) {
@@ -22,6 +22,7 @@ class BeerShow extends React.Component {
           <h3>{selectedBeer.description}</h3>
           <h3>{selectedBeer.abv}</h3>
           <h3>{selectedBeer.ibu}</h3>
+          <h3><Link to={`/breweries/${selectedBeer.brewery.id}`}>{selectedBeer.brewery.name}</Link></h3>
         </section>
       );
     }
