@@ -23,7 +23,6 @@ description     | text      | not null
 brewery_id      | integer   | not null, foreign key (references breweries)
 abv             | float     | not null
 ibu             | float     | not null
-beer_style_id   | integer   | not null
 image_url       | string    |
 
 ## breweries

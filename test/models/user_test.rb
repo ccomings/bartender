@@ -8,8 +8,8 @@
 #  password_digest :string           not null
 #  session_token   :string           not null
 #  location        :string
-#  first_name      :string
-#  last_name       :string
+#  first_name      :string           not null
+#  last_name       :string           not null
 #  about           :text
 #  image_url       :string
 #  created_at      :datetime         not null

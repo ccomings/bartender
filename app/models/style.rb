@@ -3,9 +3,9 @@
 # Table name: styles
 #
 #  id         :integer          not null, primary key
+#  style      :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  style      :string           not null
 #
 
 class Style < ApplicationRecord
