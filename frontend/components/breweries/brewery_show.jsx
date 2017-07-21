@@ -27,3 +27,5 @@ class BreweryShow extends React.Component {
     }
   }
 }
+
+export default BreweryShow;

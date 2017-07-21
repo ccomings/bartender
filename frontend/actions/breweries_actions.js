@@ -8,8 +8,8 @@ export const requestAllBreweries = () => dispatch => {
   .then(breweries => dispatch(receiveAllBreweries(breweries)));
 };
 
-export const requestOneBrewery = () => dispatch => {
-  return APIUtil.fetchOneBrewery()
+export const requestOneBrewery = (id) => dispatch => {
+  return APIUtil.fetchOneBrewery(id)
   .then(brewery => dispatch(receiveOneBrewery(brewery)));
 };
 
@@ -21,4 +21,4 @@ export const receiveAllBreweries = breweries => ({
 export const receiveOneBrewery = brewery => ({
   type: RECEIVE_ONE_BREWERY,
   brewery
-}); 
+});
