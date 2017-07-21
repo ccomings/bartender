@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { withRouter, Route } from 'react-router-dom';
 
 class BreweryShow extends React.Component {
   constructor(props) {
@@ -28,4 +28,4 @@ class BreweryShow extends React.Component {
   }
 }
 
-export default BreweryShow;
+export default withRouter(BreweryShow);

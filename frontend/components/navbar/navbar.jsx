@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter, Route, Link } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="login-signup">
@@ -39,4 +39,4 @@ const Navbar = ({ currentUser, logout, history }) => (
   currentUser ? navBar(currentUser, logout, history) : sessionLinks()
 );
 
-export default Navbar;
+export default withRouter(Navbar);

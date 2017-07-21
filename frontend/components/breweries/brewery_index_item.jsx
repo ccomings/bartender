@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class BreweryIndexItem extends React.Component{
   constructor(props) {
@@ -22,4 +22,4 @@ class BreweryIndexItem extends React.Component{
   }
 }
 
-export default BreweryIndexItem;
+export default withRouter(BreweryIndexItem);

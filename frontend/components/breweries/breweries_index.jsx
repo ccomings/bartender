@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import BreweryIndexItem from './brewery_index_item';
 
 class BreweriesIndex extends React.Component {
@@ -24,4 +24,4 @@ class BreweriesIndex extends React.Component {
   }
 }
 
-export default BreweriesIndex;
+export default withRouter(BreweriesIndex);
