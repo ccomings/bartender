@@ -1,4 +1,4 @@
-import * as APIUTIL from '../util/beer_api_util';
+import * as APIUtil from '../util/beer_api_util';
 
 export const RECEIVE_ALL_BEERS = "RECEIVE_ALL_BEERS";
 export const RECEIVE_ONE_BEER = "RECEIVE_ONE_BEER";

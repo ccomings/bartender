@@ -11,13 +11,9 @@ class BeersIndex extends React.Component {
     const { beers } = this.props;
     return (
       <section>
-        <h1>All of the Breweries</h1>
-        <ul>
-          {beers.map(beers =>
-          <BeerIndexItem
-            key={beer.id}
-            id={beer.id}
-            beer={beer}/>)}
+        <h1>All of the Beers</h1>
+        <ul>{beers.map(beer =>
+          <BeerIndexItem key={beer.id} id={beer.id} beer={beer}/>)}
         </ul>
       </section>
     );

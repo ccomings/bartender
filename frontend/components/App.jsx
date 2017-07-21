@@ -9,7 +9,9 @@ import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import Placeholder from './placeholder';
 import BreweriesIndexContainer from './breweries/breweries_index_container';
 import BreweryShowContainer from './breweries/brewery_show_container';
-import BeerIndexContainer from './beers/beer_index_container';
+import BeersIndexContainer from './beers/beers_index_container';
+// import BeersShowContainer from './beers/beers_show_container';
+
 
 const App = () => (
   <div>
@@ -20,10 +22,9 @@ const App = () => (
       <Switch>
         <AuthRoute path="/signup" component={SessionFormContainer} />
         <AuthRoute path="/login" component={SessionFormContainer} />
-        <ProtectedRoute path="/beers/:beerId" component={BreweryShowContainer} />
-        <ProtectedRoute path="/beers" component={BreweriesIndexContainer} />
         <ProtectedRoute path="/breweries/:breweryId" component={BreweryShowContainer} />
         <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
+        <ProtectedRoute path="/beers" component={BeersIndexContainer} />
         <ProtectedRoute path="/" component={Placeholder} />
       </Switch>
     </div>
