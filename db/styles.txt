@@ -27,7 +27,6 @@ Rauchbier
 Schwarzbier
 Vienna
 Wheat
-
 Doppelbock
 Eisbock
 Baltic
