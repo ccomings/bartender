@@ -10,7 +10,7 @@ import Placeholder from './placeholder';
 import BreweriesIndexContainer from './breweries/breweries_index_container';
 import BreweryShowContainer from './breweries/brewery_show_container';
 import BeersIndexContainer from './beers/beers_index_container';
-// import BeersShowContainer from './beers/beers_show_container';
+import BeerShowContainer from './beers/beer_show_container';
 
 
 const App = () => (
@@ -24,6 +24,7 @@ const App = () => (
         <AuthRoute path="/login" component={SessionFormContainer} />
         <ProtectedRoute path="/breweries/:breweryId" component={BreweryShowContainer} />
         <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
+        <ProtectedRoute path="/beers/:beerId" component={BeerShowContainer} />
         <ProtectedRoute path="/beers" component={BeersIndexContainer} />
         <ProtectedRoute path="/" component={Placeholder} />
       </Switch>

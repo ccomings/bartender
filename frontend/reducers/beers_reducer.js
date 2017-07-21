@@ -9,13 +9,13 @@ const BeersReducer = (state = {}, action) => {
     case RECEIVE_ALL_BEERS:
       return action.beers;
     case RECEIVE_ONE_BEER:
-      const newBeer = {[acton.beer.id]: action.beer};
+      const newBeer = {[action.beer.id]: action.beer};
       return merge({}, state, newBeer);
     case EDIT_BEER:
       const patched_beer = {[action.beer.id]: action.beer};
       return merge({}, state, patched_beer);
     case REMOVE_BEER:
-      let newState = merge({}, state);
+      newState = merge({}, state);
       delete newState[action.post.id];
       return newState;
     default:
