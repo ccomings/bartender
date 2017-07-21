@@ -4,7 +4,7 @@ import BeerIndexItem from './beer_index_item';
 
 class BeersIndex extends React.Component {
   componentDidMount(){
-    this.props.requestAllBreweries();
+    this.props.requestAllBeers();
   }
 
   render() {
@@ -17,7 +17,7 @@ class BeersIndex extends React.Component {
           <BeerIndexItem
             key={beer.id}
             id={beer.id}
-            beers={beer}/>)}
+            beer={beer}/>)}
         </ul>
       </section>
     );
