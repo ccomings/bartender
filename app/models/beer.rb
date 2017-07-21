@@ -18,4 +18,5 @@ class Beer < ApplicationRecord
   validates :name, uniqueness: true
 
   belongs_to :brewery
+  has_many :beer_styles
 end

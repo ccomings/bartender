@@ -9,4 +9,6 @@
 #
 
 class Style < ApplicationRecord
+  validates :style, presence: true
+  has_many :beer_styles
 end
