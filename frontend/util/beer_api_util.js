@@ -12,11 +12,11 @@ export const fetchOneBeer = id => (
   })
 );
 
-export const createBeer = data => (
+export const createBeer = beer => (
   $.ajax({
     method: 'POST',
     url: '/api/beers',
-    data
+    data: { beer }
   })
 );
 

@@ -11,7 +11,7 @@ class CreateBeer extends React.Component {
       abv: '',
       ibu: '',
       image_url: '',
-      styles: '',
+      // styles: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -27,7 +27,7 @@ class CreateBeer extends React.Component {
       abv: '',
       ibu: '',
       image_url: '',
-      styles: '',
+      // styles: '',
     });
   }
 
@@ -57,9 +57,7 @@ class CreateBeer extends React.Component {
           <label>Image link:
             <input ref="image_url" type="text" value={this.state.image_url} onChange={this.update('image_url')}/>
           </label>
-          <label>Styles:
-            <input ref="styles" type="text" value={this.state.styles} onChange={this.update('styles')}/>
-          </label>
+
           <button>Submit</button>
         </form>
       </div>
