@@ -19,4 +19,6 @@ class Beer < ApplicationRecord
 
   belongs_to :brewery
   has_many :beer_styles
+  has_many :styles,
+    through: :beer_styles
 end

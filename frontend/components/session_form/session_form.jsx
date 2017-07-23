@@ -13,9 +13,7 @@ class SessionForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
     if (nextProps.loggedIn) {
-      console.log(this.props.history);
       this.props.history.push('/');
     }
   }
