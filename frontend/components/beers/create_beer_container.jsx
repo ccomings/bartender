@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { createBeer } from '../../actions/beer_actions';
+import { createBeer } from '../../actions/beers_actions';
 import CreateBeer from './create_beer';
 
 const mapStateToProps = ({ errors }) => ({
@@ -13,5 +13,5 @@ const mapDispatchToProps = dispatch => ({
 
 export default connect(
   mapStateToProps,
-  mapStateToProps
+  mapDispatchToProps
 )(CreateBeer);

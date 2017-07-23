@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, Route, Link } from 'react-router-dom';
 import { BeerIndexItem } from '../beers/beer_index_item';
+import CreateBeerContainer from '../beers/create_beer_container';
 
 class BreweryShow extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class BreweryShow extends React.Component {
           <h3>{selectedBrewery.state}</h3>
           <h3>{selectedBrewery.country}</h3>
           <ul>{breweryBeers}</ul>
+          <CreateBeerContainer />
         </section>
       );
     }

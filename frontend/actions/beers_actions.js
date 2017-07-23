@@ -16,7 +16,7 @@ export const requestOneBeer = (id) => dispatch => {
 };
 
 export const createBeer = beer => dispatch => (
-  APIUtil.create(beer).then(beer => (
+  APIUtil.createBeer(beer).then(beer => (
     dispatch(receiveOneBeer(beer))
   ))
 );

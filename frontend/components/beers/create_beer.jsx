@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
 class CreateBeer extends React.Component {
@@ -7,7 +7,7 @@ class CreateBeer extends React.Component {
     this.state = {
       name: '',
       description: '',
-      brewery: '',
+      brewery_id: '',
       abv: '',
       ibu: '',
       image_url: '',
@@ -18,25 +18,28 @@ class CreateBeer extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log(this.props);
     this.props.createBeer(this.state);
     this.setState({
       name: '',
       description: '',
-      brewery: '',
+      brewery_id: this.props.match.params.breweryId,
       abv: '',
       ibu: '',
       image_url: '',
       styles: '',
     });
   }
+
   update(field) {
     return e => this.setState({
-      [field]: e.currentTarget.value});
+      [field]: e.target.value});
   }
 
   render(){
     return (
       <div>
+
         <h3>Add a Beer!</h3>
         <form onSubmit={this.handleSubmit}>
           <label>Name:
@@ -44,9 +47,6 @@ class CreateBeer extends React.Component {
           </label>
           <label>Description:
             <input ref="description" type="text" value={this.state.description} onChange={this.update('description')}/>
-          </label>
-          <label>Brewery:
-            <input ref="brewery" type="text" value={this.state.brewery} onChange={this.update('brewery')}/>
           </label>
           <label>ABV:
             <input ref="abv" type="text" value={this.state.abv} onChange={this.update('abv')}/>
@@ -57,8 +57,15 @@ class CreateBeer extends React.Component {
           <label>Image link:
             <input ref="image_url" type="text" value={this.state.image_url} onChange={this.update('image_url')}/>
           </label>
+          <label>Styles:
+            <input ref="styles" type="text" value={this.state.styles} onChange={this.update('styles')}/>
+          </label>
+          <button>Submit</button>
         </form>
       </div>
     );
+
   }
 }
+
+export default withRouter(CreateBeer);
