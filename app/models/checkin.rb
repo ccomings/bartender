@@ -13,7 +13,6 @@
 #
 
 class Checkin < ApplicationRecord
-  validates :user_id, :beer_id, :rating, :review, :brewery_id
   validates :user_id, :beer_id, :rating, presence: true
 
   belongs_to :user

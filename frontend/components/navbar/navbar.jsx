@@ -12,7 +12,9 @@ const sessionLinks = () => (
 const navBar = (currentUser, logout, history) => (
   <nav className="navbar_container">
     <div className="navbar-items navbar-left-side">
-      <img className="logo" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500518586/Screen_Shot_2017-07-19_at_7.41.37_PM_s94bef.png"/>
+      <Link to="/">
+        <img className="logo" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500518586/Screen_Shot_2017-07-19_at_7.41.37_PM_s94bef.png"/>
+      </Link>
     </div>
     <div className="navbar-items navbar-middle-side">
       <button className='square-buttons' onClick={() => {
