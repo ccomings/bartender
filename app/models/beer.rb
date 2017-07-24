@@ -21,4 +21,6 @@ class Beer < ApplicationRecord
   has_many :beer_styles
   has_many :styles,
     through: :beer_styles
+  has_many :checkins
+
 end
