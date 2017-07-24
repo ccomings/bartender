@@ -11,3 +11,11 @@ export const fetchOneCheckin = id => (
     url: `/api/checkins/${id}`,
   })
 );
+
+export const createCheckin = checkin => (
+  $.ajax({
+    method: 'POST',
+    url: '/api/checkins',
+    data: { checkin }
+  })
+);
