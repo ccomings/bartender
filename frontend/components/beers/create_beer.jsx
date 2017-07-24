@@ -19,15 +19,11 @@ class CreateBeer extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.props);
-    this.props.createBeer(this.state);
     this.setState({
-      name: '',
-      description: '',
       brewery_id: this.props.match.params.breweryId,
-      abv: '',
-      ibu: '',
-      image_url: '',
       // styles: '',
+    }, () => {
+      this.props.createBeer(this.state);
     });
   }
 

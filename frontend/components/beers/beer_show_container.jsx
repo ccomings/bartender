@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
 import { selectOneBeer } from '../../reducers/selectors';
 import { requestOneBeer } from '../../actions/beers_actions';
@@ -14,7 +15,7 @@ const mapDispatchToProps = dispatch => ({
   requestOneBeer: id => dispatch(requestOneBeer(id))
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(BeerShow);
+)(BeerShow));

@@ -12,7 +12,7 @@ const mapDispatchToProps = dispatch => ({
   requestAllBreweries: () => dispatch(requestAllBreweries())
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(BreweriesIndex);
+)(BreweriesIndex));

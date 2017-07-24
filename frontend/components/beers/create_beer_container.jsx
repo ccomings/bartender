@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
 import { createBeer } from '../../actions/beers_actions';
 import CreateBeer from './create_beer';
@@ -11,7 +12,7 @@ const mapDispatchToProps = dispatch => ({
   createBeer: beer => dispatch(createBeer(beer))
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(CreateBeer);
+)(CreateBeer));

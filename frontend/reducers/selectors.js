@@ -13,3 +13,5 @@ export const selectOneBeer = ( { beers }, id ) => {
   const beer = beers[id];
   return beer;
 };
+
+export const selectAllCheckins = ({ checkins }) => values(checkins);
