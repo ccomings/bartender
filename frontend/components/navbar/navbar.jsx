@@ -3,9 +3,9 @@ import { withRouter, Route, Link } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link to='/login'><h2>Login</h2></Link>
+    <Link to='/login' className="square-buttons"><h2>Login</h2></Link>
     <img className="logo" src="http://res.cloudinary.com/dkeart1zy/image/upload/v1500518586/Screen_Shot_2017-07-19_at_7.41.37_PM_s94bef.png"/>
-    <Link to='/signup'><h2>Sign up</h2></Link>
+    <Link to='/signup' className="square-buttons"><h2>Sign up</h2></Link>
   </nav>
 );
 
