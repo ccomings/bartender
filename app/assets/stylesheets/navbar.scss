@@ -6,17 +6,21 @@
 }
 
 .navbar_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
   background-color: #7d8a1d;
   opacity: .78;
   border: 2px solid grey;
   position: fixed;
   width: 100%;
+}
 
+.navbar {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px,
 }
 
 .navbar-right-side {

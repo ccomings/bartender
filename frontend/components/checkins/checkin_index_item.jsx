@@ -9,7 +9,9 @@ class CheckinIndexItem extends React.Component{
   render() {
     return (
       <div>
-          <h1>Checkin 1</h1>
+          <ul>
+            <li>{this.props.checkin}</li>
+          </ul>
       </div>
     );
   }

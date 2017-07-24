@@ -11,14 +11,12 @@ class CreateBeer extends React.Component {
       abv: '',
       ibu: '',
       image_url: '',
-      // styles: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.props);
     this.setState({
       brewery_id: this.props.match.params.breweryId,
       // styles: '',

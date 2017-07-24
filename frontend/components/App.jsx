@@ -11,6 +11,7 @@ import BreweryShowContainer from './breweries/brewery_show_container';
 import BeersIndexContainer from './beers/beers_index_container';
 import BeerShowContainer from './beers/beer_show_container';
 import CheckinsIndexContainer from './checkins/checkins_index_container';
+import CreateCheckinContainer from './checkins/create_checkin_container';
 
 
 const App = () => (
@@ -26,6 +27,7 @@ const App = () => (
         <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
         <ProtectedRoute path="/beers/:beerId" component={BeerShowContainer} />
         <ProtectedRoute path="/beers" component={BeersIndexContainer} />
+        <ProtectedRoute path="/checkin" component={CreateCheckinContainer} />
         <ProtectedRoute path="/" component={CheckinsIndexContainer} />
       </Switch>
     </div>
