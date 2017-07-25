@@ -12,6 +12,5 @@
 
  *= require reset
  *= require main
- *= require_tree .
  *= require_self
  */

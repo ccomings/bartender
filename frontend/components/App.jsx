@@ -15,12 +15,10 @@ import CreateCheckinContainer from './checkins/create_checkin_container';
 
 
 const App = () => (
-  <div>
-    <header>
-      <NavbarContainer />
-    </header>
+  <div className="beertendr">
+    <NavbarContainer />
     <div className="app-page-container">
-      <div className="app-page-display">  
+      <div className="app-page-display">
         <Switch>
           <AuthRoute path="/signup" component={SessionFormContainer} />
           <AuthRoute path="/login" component={SessionFormContainer} />

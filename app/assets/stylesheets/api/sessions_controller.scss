@@ -3,20 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .login-form-container {
-  border: 2px solid grey;
-  background-color: #E0AB64;
+  // border: 2px solid grey;
   opacity: .78;
-  margin: auto;
-  margin-top: 150px;
   padding: 50px;
   border-radius: 10px;
+  max-width: 300px;
 }
 
 .login-form-box {
   // border: solid 1px black;
+  background-color: #E0AB64;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 100px 0 0 0;
 }
 
 .login-input-container{
@@ -50,14 +50,11 @@
 .login-input-submit{
   align-self: center;
   align-self: stretch;
-  margin-top: 5px,
 }
 
 .demo-login {
   // border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
   padding-top: 7px
 }
 
@@ -70,7 +67,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid grey;
+  // border: 2px solid grey;
 }
 
 .icon {

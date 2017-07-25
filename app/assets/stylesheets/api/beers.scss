@@ -1,3 +1,25 @@
 // Place all the styles related to the API::Beers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index-section {
+}
+
+.index-list {
+  // background-color: #E0AB64;
+  // opacity: .78;
+  border: solid 1px black;
+
+}
+
+.index-list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 10px;
+  background-color: #E0AB64;
+  opacity: .75;
+  border: solid 1px black;
+
+
+}

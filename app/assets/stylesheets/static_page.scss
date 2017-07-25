@@ -2,7 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+html, body {
+  height: 100%;
+  background-image: url(http://res.cloudinary.com/dkeart1zy/image/upload/v1500499040/giphy_ibhdli.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+}
 
 button {
   cursor: pointer;
@@ -12,51 +18,17 @@ button:hover {
   background-color: #E0AB64;
 }
 
-body {
-  height: 100%;
-  line-height: 1.5;
-}
-
-ol, ul {
-  list-style: none;
-}
 
 img {
   width: 100%
 }
 
-body {
-  // background-color: #E0D164
-}
-
-h2 {
-  font: black;
-  font-weight: 700;
-  font-size: 24px,
-}
-
-h3 {
-  font: black;
-  font-weight: 700;
-  font-size: 20px,
-}
-
-
-body {
-  background-image: url(http://res.cloudinary.com/dkeart1zy/image/upload/v1500499040/giphy_ibhdli.gif);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-  background-position: left;
-
-
-}
-
 .app-page-container {
   max-width: 700px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .app-page-display {
-
+  margin-top: 90px;
 }

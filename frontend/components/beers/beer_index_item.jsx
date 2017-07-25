@@ -10,7 +10,7 @@ class BeerIndexItem extends React.Component{
     return (
       <div>
         <Link to={`/beers/${this.props.id}`}>
-          <ul>
+          <ul className="index-list-item">
             <li><h4>{this.props.beer.name}</h4></li>
             <li><h4>{this.props.beer.brewery.name}</h4></li>
             <li><h4>{this.props.beer.abv}</h4></li>
