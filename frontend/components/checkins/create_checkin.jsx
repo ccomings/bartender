@@ -33,7 +33,7 @@ class CreateCheckin extends React.Component {
 
   update(field) {
     return e => {
-      if (field === 'beer' || 'brewery') {
+      if (field === 'beer') {
         this.setState({searchVal: e.target.value}, () => {
           this.props.receiveSearchVal(this.state.searchVal);
         });

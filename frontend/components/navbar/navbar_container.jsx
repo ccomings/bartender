@@ -13,8 +13,8 @@ const mapStateToProps = ({ session }) => ({
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  fetchBeers: () => dispatch(requestAllBeers()),
-  fetchBreweries: () => dispatch(requestAllBreweries()),
+  // fetchBeers: () => dispatch(requestAllBeers()),
+  // fetchBreweries: () => dispatch(requestAllBreweries()),
 });
 
 export default withRouter(connect(

@@ -9,9 +9,9 @@ class BreweryIndexItem extends React.Component{
   render() {
     return (
       <div>
-        <Link to={`/breweries/${this.props.id}`}>
-          <img src={this.props.brewery.image_url} className="list-images"/>
-          <ul>
+        <Link to={`/breweries/${this.props.id}`} >
+          <ul className="index-list-item">
+            <li><img src={this.props.brewery.image_url} className="list-images"/></li>
             <li><h4>{this.props.brewery.name}</h4></li>
             <li><h4>{this.props.brewery.city}</h4></li>
             <li><h4>{this.props.brewery.state}</h4></li>

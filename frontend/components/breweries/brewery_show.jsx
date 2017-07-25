@@ -23,7 +23,7 @@ class BreweryShow extends React.Component {
         )
       );
       return(
-        <section>
+        <section className="show-page-section">
           <img src={selectedBrewery.image_url} className="show-page-images"/>
           <h1>{selectedBrewery.name}</h1>
           <h3>{selectedBrewery.city}</h3>
