@@ -52,11 +52,19 @@
 
 .square-buttons {
   // border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   width: 25%;
   background-color: #E0D164;
   border-radius: 10px;
   // margin: 5;
+
+}
+
+.square-buttons:hover {
+  background-color: #E0AB64;
 }
 
 .circle-buttons {
