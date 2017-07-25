@@ -15,3 +15,5 @@ export const selectOneBeer = ( { beers }, id ) => {
 };
 
 export const selectAllCheckins = ({ checkins }) => values(checkins);
+
+// TODO: export const selectSearchBeers = ({ })

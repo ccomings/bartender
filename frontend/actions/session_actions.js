@@ -2,6 +2,7 @@ import * as APIUtil from '../util/session_api_util';
 
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
+export const RECEIVE_SEARCH = 'RECEIVE_SEARCH';
 
 export const signup = user => dispatch => (
   APIUtil.signup(user).then(user => (
@@ -33,4 +34,9 @@ export const receiveErrors = errors => ({
 export const receiveCurrentUser = currentUser => ({
   type: RECEIVE_CURRENT_USER,
   currentUser
+});
+
+export const receiveSearchVal = searchVal => ({
+  type: RECEIVE_SEARCH,
+  searchVal
 });
