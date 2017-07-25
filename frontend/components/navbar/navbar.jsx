@@ -4,7 +4,6 @@ import { withRouter, Route, Link } from 'react-router-dom';
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
-    // console.log(this.props);
   }
 
   render() {
@@ -53,6 +52,7 @@ class Navbar extends React.Component {
   }
 }
 
+export default withRouter(Navbar);
 
 // const sessionLinks = () => (
 //   <nav className="navbar_container">
@@ -99,5 +99,3 @@ class Navbar extends React.Component {
 // const Navbar = ({ currentUser, logout, history }) => {
 //   return currentUser ? navBar(currentUser, logout, history) : sessionLinks();
 // };
-
-export default withRouter(Navbar);

@@ -1,3 +1,83 @@
 // Place all the styles related to the Api::SessionsController controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.login-form-container {
+  border: 2px solid grey;
+  background-color: #E0AB64;
+  opacity: .78;
+  margin: auto;
+  margin-top: 150px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.login-form-box {
+  // border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login-input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 5px;
+  border: 2px solid grey;
+}
+
+.session-login-form {
+  // border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  // border: solid 1px black;
+  background-color: transparent;
+  margin: 0;
+  padding: 5;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-input-submit{
+  align-self: center;
+  align-self: stretch;
+  margin-top: 5px,
+}
+
+.demo-login {
+  // border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 7px
+}
+
+.login-signup {
+  // border: solid 1px black;
+  background-color: #7d8a1d;
+  opacity: .78;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid grey;
+}
+
+.icon {
+  height: 22px;
+  width: 22px;
+}
+
+.fa {
+  padding: 5px;
+}

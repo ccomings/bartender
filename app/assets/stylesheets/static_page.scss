@@ -4,16 +4,8 @@
 
 
 
-html {
-  // background-size: cover;
-
-
-}
 button {
-  border: 2px solid grey;
   cursor: pointer;
-  text-align: center;
-
 }
 
 button:hover {
@@ -55,133 +47,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
-  background-position: center;
+  background-position: left;
+
 
 }
-
-.login-form-container {
-  border: 2px solid grey;
-  background-color: #E0AB64;
-  opacity: .78;
-  margin: auto;
-  margin-top: 10%;
-  padding: 50px;
-  border-radius: 10px;
-}
-
-.session-login-form {
-  // border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.login-input {
-  // border: solid 1px black;
-  background-color: transparent;
-  margin: 0;
-  padding: 5;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.login-input-submit{
-  align-self: center;
-  align-self: stretch;
-  margin-top: 5px,
-}
-
-
-
-.demo-login {
-  // border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 7px
-}
-
-.login-form-box {
-  // border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.login-signup {
-  // border: solid 1px black;
-  background-color: #7d8a1d;
-  opacity: .78;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px solid grey;
-
-}
-
-
-
-.square-buttons {
-  // border: solid 1px black;
-  height: 50px;
-  width: 25%;
-  background-color: #E0D164;
-  border-radius: 10px;
-  // margin: 5;
-}
-
-.circle-buttons {
-  // border: solid 1px black;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin-left: 5px;
-  opacity: inherit;
-  background-color: #E0D164;
-  font-size: 12px;
-}
-
-
-
-.greeting {
-  margin: 5px;
-}
-
-.icon {
-  height: 22px;
-  width: 22px;
-}
-
-.login-input-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2px;
-  padding: 5px;
-  border: 2px solid grey;
-
-}
-
-.logo {
-  width: 300px;
-}
-
-
 
 .app-page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 700px;
+  margin: auto;
 }
 
-.fa {
-  padding: 5px;
+.app-page-display {
+
 }

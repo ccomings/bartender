@@ -12,6 +12,7 @@
   border: 2px solid grey;
   position: fixed;
   width: 100%;
+  top: -1px;
 }
 
 .navbar {
@@ -41,5 +42,32 @@
   font: black;
   font-weight: 700;
   font-size: 20px,
+}
 
+.greeting {
+  margin: 5px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.square-buttons {
+  // border: solid 1px black;
+  height: 50px;
+  width: 25%;
+  background-color: #E0D164;
+  border-radius: 10px;
+  // margin: 5;
+}
+
+.circle-buttons {
+  // border: solid 1px black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+  opacity: inherit;
+  background-color: #E0D164;
+  font-size: 12px;
 }

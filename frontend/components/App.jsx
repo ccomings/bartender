@@ -20,16 +20,18 @@ const App = () => (
       <NavbarContainer />
     </header>
     <div className="app-page-container">
-      <Switch>
-        <AuthRoute path="/signup" component={SessionFormContainer} />
-        <AuthRoute path="/login" component={SessionFormContainer} />
-        <ProtectedRoute path="/breweries/:breweryId" component={BreweryShowContainer} />
-        <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
-        <ProtectedRoute path="/beers/:beerId" component={BeerShowContainer} />
-        <ProtectedRoute path="/beers" component={BeersIndexContainer} />
-        <ProtectedRoute path="/checkin" component={CreateCheckinContainer} />
-        <ProtectedRoute path="/" component={CheckinsIndexContainer} />
-      </Switch>
+      <div className="app-page-display">  
+        <Switch>
+          <AuthRoute path="/signup" component={SessionFormContainer} />
+          <AuthRoute path="/login" component={SessionFormContainer} />
+          <ProtectedRoute path="/breweries/:breweryId" component={BreweryShowContainer} />
+          <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
+          <ProtectedRoute path="/beers/:beerId" component={BeerShowContainer} />
+          <ProtectedRoute path="/beers" component={BeersIndexContainer} />
+          <ProtectedRoute path="/checkin" component={CreateCheckinContainer} />
+          <ProtectedRoute path="/" component={CheckinsIndexContainer} />
+        </Switch>
+      </div>
     </div>
   </div>
 );
