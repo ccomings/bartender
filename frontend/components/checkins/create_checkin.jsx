@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router';
 import Modal from 'react-modal';
+import SearchIndexContainer from '../search/search_index_container';
 
 class CreateCheckin extends React.Component {
   constructor(props) {
@@ -57,20 +58,29 @@ class CreateCheckin extends React.Component {
         <div>
           <form onSubmit={this.handleSubmit}>
             <label>Beers:
-              <input type="text" placeholder="beer" value={this.state.checkin.beer_id} onChange={this.update('beer')}/>
+              <input type="text" placeholder="beer"
+                     value={this.state.checkin.beer_id}
+                     onChange={this.update('beer')}/>
             </label>
             <label>Brewery:
-              <input type="text" placeholder="brewery" value={this.state.checkin.brewery_id} onChange={this.update('brewery')}/>
+              <input type="text" placeholder="brewery"
+                     value={this.state.checkin.brewery_id}
+                     onChange={this.update('brewery')}/>
             </label>
             <label>Rating:
-              <input type="text" placeholder="rating" value={this.state.checkin.rating} onChange={this.update('rating')}/>
+              <input type="text" placeholder="rating"
+                     value={this.state.checkin.rating}
+                     onChange={this.update('rating')}/>
             </label>
             <label>Review:
-              <input type="text" placeholder="review" value={this.state.checkin.review} onChange={this.update('review')}/>
+              <input type="text" placeholder="review"
+                     value={this.state.checkin.review}
+                     onChange={this.update('review')}/>
             </label>
             <input type="submit" value="Checkin"/>
           </form>
         </div>
+        <SearchIndexContainer />
       </Modal>
     );
   }

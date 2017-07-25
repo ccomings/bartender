@@ -8,9 +8,7 @@ const mapStateToProps = state => ({
   searchVal: selectSearchBeers(state)
 });
 
-const mapDispatchToProps = dispatch => ({
-  receiveSearchVal: () => dispatch(receiveSearchVal())
-});
+const mapDispatchToProps = dispatch => ({});
 
 export default withRouter(connect(
   mapStateToProps,

@@ -12,13 +12,13 @@ class SearchIndex extends React.Component {
   }
 
   render() {
-    const { beers } = this.props;
+    const { items } = this.props;
     return (
       <section>
         <h1>All of the Search Items</h1>
 
-        <ul>{beers.length > 0 ? beers.map(beer =>
-          <SearchIndexItem key={beer.id} id={beer.id} beer={beer}/>) : ""}
+        <ul>{items.length > 0 ? items.map(item =>
+          <SearchIndexItem key={item.id} id={item.id} item={item}/>) : ""}
         </ul>
       </section>
     );
