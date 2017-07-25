@@ -90,7 +90,7 @@ class SessionForm extends React.Component {
           </div>
         </form>
         <form onSubmit={this.handleDemo} className='demo-login'>
-          <input type='submit' value='Demo Login'/>
+          <input type='submit' value='Demo Login' className="login-input-submit"/>
         </form>
       </div>
     );

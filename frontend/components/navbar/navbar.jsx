@@ -6,6 +6,11 @@ class Navbar extends React.Component {
     super(props);
   }
 
+  componentWillMount() {
+    this.props.fetchBeers();
+    this.props.fetchBreweries();
+  }
+
   render() {
     const { currentUser, logout, history } = this.props;
     if (currentUser) {

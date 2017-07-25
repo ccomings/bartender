@@ -54,12 +54,18 @@ class CreateCheckin extends React.Component {
       <Modal
         isOpen={this.state.modalIsOpen}
         onRequestClose={this.closeModal}
-        contentLabel="Create Checkin">
+        contentLabel="Create Checkin"
+        >
         <div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <form onSubmit={this.handleSubmit}>
             <label>Beers:
               <input type="text" placeholder="beer"
-                     value={this.state.checkin.beer_id}
+                     value={this.state.searchVal}
                      onChange={this.update('beer')}/>
             </label>
             <label>Brewery:

@@ -10,6 +10,7 @@ const nullUser = Object.freeze({
   currentUser: null,
   errors: [],
   searchVal: "",
+  selectedBeerId: null,
 });
 
 const SessionReducer = (state = nullUser, action) => {

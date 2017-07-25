@@ -19,7 +19,6 @@ class CreateBeer extends React.Component {
     e.preventDefault();
     this.setState({
       brewery_id: this.props.match.params.breweryId,
-      // styles: '',
     }, () => {
       this.props.createBeer(this.state);
     });

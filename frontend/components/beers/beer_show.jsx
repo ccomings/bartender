@@ -18,6 +18,7 @@ class BeerShow extends React.Component {
     } else {
       return(
         <section>
+          <img src={selectedBeer.image_url} className="show-page-images"/>
           <h1>{selectedBeer.name}</h1>
           <h3>{selectedBeer.description}</h3>
           <h3>{selectedBeer.abv}</h3>

@@ -7,7 +7,7 @@ import { signup, login, logout } from './actions/session_actions';
 document.addEventListener('DOMContentLoaded', () => {
   let store;
   if (window.currentUser) {
-    const preloadedState = {session: { currentUser: window.currentUser} };
+    const preloadedState = {session: { currentUser: window.currentUser, searchVal: '', selectedBeerId: null} };
     store = configureStore(preloadedState);
   } else {
     store = configureStore();

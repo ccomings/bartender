@@ -17,6 +17,7 @@ export const selectOneBeer = ( { beers }, id ) => {
 export const selectAllCheckins = ({ checkins }) => values(checkins);
 
 export const selectSearchBeers = ({ beers }, searchVal ) => {
+
   let searchArray = [];
   if (Object.keys(beers)) {
     Object.keys(beers).forEach(id => {

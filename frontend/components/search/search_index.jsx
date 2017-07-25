@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import SearchIndexItem from './search_index_item';
 
+
 class SearchIndex extends React.Component {
   constructor(props){
     super(props);
-  }
-
-  componentDidMount(){
-    this.props.receiveSearchVal();
   }
 
   render() {

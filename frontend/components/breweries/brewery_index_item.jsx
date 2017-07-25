@@ -10,7 +10,7 @@ class BreweryIndexItem extends React.Component{
     return (
       <div>
         <Link to={`/breweries/${this.props.id}`}>
-          <img src={this.props.brewery.image_url}/>
+          <img src={this.props.brewery.image_url} className="list-images"/>
           <ul>
             <li><h4>{this.props.brewery.name}</h4></li>
             <li><h4>{this.props.brewery.city}</h4></li>
