@@ -8,6 +8,7 @@ const mapStateToProps = (state, { match }) => {
   const breweryId = parseInt(match.params.breweryId);
   const brewery = selectOneBrewery(state, match.params.breweryId);
   return {breweryId, brewery};
+
 };
 
 const mapDispatchToProps = dispatch => ({

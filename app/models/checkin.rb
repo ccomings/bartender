@@ -14,6 +14,7 @@
 
 class Checkin < ApplicationRecord
   validates :user_id, :beer_id, :rating, presence: true
+  validates :rating, inclusion: { in: [1,2,3,4,5], message: "not valid" }
 
   belongs_to :user
   belongs_to :beer

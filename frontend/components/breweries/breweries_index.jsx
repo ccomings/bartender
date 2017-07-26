@@ -10,10 +10,9 @@ class BreweriesIndex extends React.Component {
   render() {
     const { breweries } = this.props;
     return (
-      <section>
+      <section className='index-section'>
         <h1>All of the Breweries</h1>
-        <ul>
-          {breweries.map(brewery =>
+        <ul className="index-list">{breweries.map(brewery =>
           <BreweryIndexItem
             key={brewery.id}
             id={brewery.id}

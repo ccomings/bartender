@@ -7,7 +7,7 @@ class CreateBeer extends React.Component {
     this.state = {
       name: '',
       description: '',
-      brewery_id: '',
+      brewery_id: this.props.match.params.breweryId,
       abv: '',
       ibu: '',
       image_url: '',
@@ -17,11 +17,8 @@ class CreateBeer extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({
-      brewery_id: this.props.match.params.breweryId,
-    }, () => {
-      this.props.createBeer(this.state);
-    });
+    this.props.createBeer(this.state);
+
   }
 
   update(field) {
@@ -32,7 +29,6 @@ class CreateBeer extends React.Component {
   render(){
     return (
       <div>
-
         <h3>Add a Beer!</h3>
         <form onSubmit={this.handleSubmit}>
           <label>Name:
@@ -50,7 +46,6 @@ class CreateBeer extends React.Component {
           <label>Image link:
             <input ref="image_url" type="text" value={this.state.image_url} onChange={this.update('image_url')}/>
           </label>
-
           <button>Submit</button>
         </form>
       </div>

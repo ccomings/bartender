@@ -9,8 +9,10 @@ User.destroy_all
 Brewery.destroy_all
 Beer.destroy_all
 Style.destroy_all
+Checkin.destroy_all
 
 User.create!(username: 'guest', email:'guest@guest.com', password: 'password', first_name: 'guest_first', last_name: 'guest_last')
+
 
 Brewery.create!(name: 'Bump City Brewery', country: 'United States', state: 'California', city: 'Oakland', website: 'bumpcitybrewery.com', image_url: 'http://res.cloudinary.com/dkeart1zy/image/upload/v1500605762/Screen_Shot_2017-07-20_at_7.55.35_PM_e3kbmq.png')
 Brewery.create!(name: 'Ale Industires', country: 'United States', state: 'California', city: 'Oakland', website: 'aleindustries.com', image_url: 'http://c66a301522d9e5ac11b8-9746a72e68ee7c58e3f37701b5e74d27.r31.cf1.rackcdn.com/731124-square.jpg')
@@ -32,9 +34,11 @@ Beer.create!(name: 'MAPLE TRIPEL', description: 'Belgian-style ale barrel aged w
 Beer.create!(name: 'SAISON', description: 'Bright farmhouse ale with tropical flavors. Tasting notes: Mango, pepper, light, quenching', brewery_id: 3, abv: "", ibu: "", image_url: "")
 Beer.create!(name: 'Arrogant Bastard Ale', description: 'Arrogant Bastard Ale is an American strong ale. It is marketed by warning potential consumers that they are "not worthy" of such a beer. It is a popular beer among craft beer aficionados. Local designer/illustrator Thomas K. Matthews created the original gargoyle in 1996. He also drew the Arrogant Bastard Ale, Stone Ruination IPA and Stone Levitation Ale gargoyles, as well as barley and hops motifs.',
   brewery_id: 4, abv: "7.2", ibu: "", image_url: "https://s3.amazonaws.com/brewerydbapi/beer/qlwwem/upload_IZunS7-medium.png")
-Beer.create!(name: 'Ruination IPA', description: 'So called because of the "ruinous" effect on your palate! This massive hop monster has a wonderfully delicious and intensely bitter flavor on a refreshing malt base. One taste and you can easily see why we call this brew "a liquid poem to the glory of the hop!" Those who seek, crave and rejoice in beers with big, bold, bitter character will find true nirvana in Stone Ruination IPA!', 
+Beer.create!(name: 'Ruination IPA', description: 'So called because of the "ruinous" effect on your palate! This massive hop monster has a wonderfully delicious and intensely bitter flavor on a refreshing malt base. One taste and you can easily see why we call this brew "a liquid poem to the glory of the hop!" Those who seek, crave and rejoice in beers with big, bold, bitter character will find true nirvana in Stone Ruination IPA!',
   brewery_id: 4, abv: "8.2%", ibu: "100", image_url: "https://s3.amazonaws.com/brewerydbapi/beer/7cnuJq/upload_aC4vUP-medium.png")
 
+Checkin.create!(user_id: 1, brewery_id: 1, beer_id: 2, review: "It was good", rating: 4)
+Checkin.create!(user_id: 1, brewery_id: 2, beer_id: 7, review: "Yay!", rating: 5)
 
 
 beer_styles = ["Ale", "Altbier", "Amber", "American", "Bock",
