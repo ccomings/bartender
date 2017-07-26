@@ -34,3 +34,11 @@ export const removeBeer = id => (
     url: `/api/beers/${id}`
   })
 );
+
+export const fetchSearchBeers = name => (
+  $.ajax({
+    method: "GET",
+    url: `/api/beers/?query=${name}`
+    
+  })
+);

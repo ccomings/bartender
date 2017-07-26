@@ -31,11 +31,22 @@ class CreateCheckin extends React.Component {
     this.props.history.push('/');
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.selectedBeerId !== nextProps.selectedBeerId) {
+      this.setState({
+        checkin:{
+          beer_id: nextProps.selectedBeerId,
+        },
+        searchVal: nextProps.beers[nextProps.selectedBeerId].name
+      });
+    }
+  }
+
   update(field) {
     return e => {
       if (field === 'beer') {
         this.setState({searchVal: e.target.value}, () => {
-          this.props.receiveSearchVal(this.state.searchVal);
+          this.props.requestSearchBeers(this.state.searchVal);
         });
       } else {
         this.setState({checkin: {

@@ -2,7 +2,13 @@ class Api::BeersController < ApplicationController
   before_action :require_logged_in
 
   def index
-    @beers = Beer.all
+    if params[:query]
+      name = "%#{params[:query]}%"
+      @beers = Beer.where("lower(name) LIKE ?", name.downcase)
+    else
+      @beers = Beer.all
+    end
+
     render :index
   end
 

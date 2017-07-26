@@ -33,6 +33,12 @@ export const deleteBeer = id => dispatch => (
   ))
 );
 
+export const requestSearchBeers = name => dispatch => (
+  APIUtil.fetchSearchBeers(name).then(beers => (
+    dispatch(receiveAllBeers(beers))
+  ))
+);
+
 export const receiveAllBeers = beers => ({
   type: RECEIVE_ALL_BEERS,
   beers

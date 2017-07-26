@@ -3,7 +3,8 @@ import merge from 'lodash/merge';
 import {
   RECEIVE_CURRENT_USER,
   RECEIVE_ERRORS,
-  RECEIVE_SEARCH
+  RECEIVE_SEARCH,
+  RECEIVE_SELECTED_BEER_ID,
 } from '../actions/session_actions';
 
 const nullUser = Object.freeze({
@@ -26,6 +27,9 @@ const SessionReducer = (state = nullUser, action) => {
       return merge({}, state, {
         errors
       });
+    case RECEIVE_SELECTED_BEER_ID:
+      const selectedBeerId = action.selectedBeerId;
+      return merge({}, state, {selectedBeerId});
     case RECEIVE_SEARCH:
       const searchVal = action.searchVal;
       return merge({}, state, {searchVal});

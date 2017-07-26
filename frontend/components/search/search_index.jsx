@@ -15,7 +15,7 @@ class SearchIndex extends React.Component {
         <h1>All of the Search Items</h1>
 
         <ul>{items.length > 0 ? items.map(item =>
-          <SearchIndexItem key={item.id} id={item.id} item={item}/>) : ""}
+          <SearchIndexItem receiveSelectedBeerId={this.props.receiveSelectedBeerId} key={item.id} id={item.id} item={item}/>) : ""}
         </ul>
       </section>
     );

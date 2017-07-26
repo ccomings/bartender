@@ -10,13 +10,10 @@ class SearchIndexItem extends React.Component{
 
   handleClick(e) {
     e.preventDefault();
-    this.setState({
-      selectedBeerId: this.props.id
-    });
+    this.props.receiveSelectedBeerId(this.props.item.id);
   }
 
   render() {
-    console.log(this.props);
     return (
       <div onClick={this.handleClick}>
         {this.props.item.name}
