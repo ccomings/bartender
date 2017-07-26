@@ -64,39 +64,37 @@ class SessionForm extends React.Component {
       <div className='login-form-container'>
         <div className='login-form-box'>
           <form onSubmit={this.handleSubmit}>
-            <h2>Welcome to Beertendr!</h2>
-            <h3 className="navlink-parent">Please {this.props.formType} or {this.navLink()}</h3>
+            <ul>
+              <li className='login-form-list-items'><h2>Welcome to Beertendr!</h2></li>
+              <li className='login-form-list-items'><h3 className="navlink-parent">Please {this.props.formType} or {this.navLink()}</h3></li>
               {this.renderErrors()}
-            <div className='session-login-form'>
-              <ul>
-                <li>
-                  <label className='login-input-container'>
-                    <i className="fa fa-user fa-lg" aria-hidden="true"></i>
-                    <input
-                      placeholder=" Username"
-                      type='text'
-                      value={this.state.username}
-                      onChange={this.update('username')}
-                      className='login-input'
+              <li className='login-form-list-items'>
+                <label className='login-input-container'>
+                  <i className="fa fa-user fa-lg" aria-hidden="true"></i>
+                  <input
+                    placeholder=" Username"
+                    type='text'
+                    value={this.state.username}
+                    onChange={this.update('username')}
+                    className='login-input'
                     />
-                  </label>
-                </li>
-                <li>
-                  <label className='login-input-container'>
-                    <i className="fa fa-lock fa-lg" aria-hidden="true"></i>
-                    <input placeholder=" Password"
-                      type='password'
-                      value={this.state.password}
-                      onChange={this.update('password')}
-                      className='login-input'
-                      />
-                  </label>
-                </li>
-                <li>
-                  <input type='submit' value='Submit' className="login-input-submit"/>
-                </li>
-              </ul>
-          </div>
+                </label>
+              </li>
+              <li className='login-form-list-items'>
+                <label className='login-input-container'>
+                  <i className="fa fa-lock fa-lg" aria-hidden="true"></i>
+                  <input placeholder=" Password"
+                    type='password'
+                    value={this.state.password}
+                    onChange={this.update('password')}
+                    className='login-input'
+                    />
+                </label>
+              </li>
+              <li className='login-form-list-items'>
+                <input type='submit' value='Submit' className="login-input-submit"/>
+              </li>
+            </ul>
           </form>
           <form onSubmit={this.handleDemo} className='demo-login'>
             <input type='submit' value='Demo Login' className="login-input-submit"/>

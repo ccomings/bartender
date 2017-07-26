@@ -26,6 +26,7 @@ const App = () => (
           <ProtectedRoute path="/breweries" component={BreweriesIndexContainer} />
           <ProtectedRoute path="/beers/:beerId" component={BeerShowContainer} />
           <ProtectedRoute path="/beers" component={BeersIndexContainer} />
+          <ProtectedRoute path="/checkins" component={CheckinsIndexContainer} />
           <ProtectedRoute path="/checkin" component={CreateCheckinContainer} />
           <ProtectedRoute path="/" component={CheckinsIndexContainer} />
         </Switch>

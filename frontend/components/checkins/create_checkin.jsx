@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router';
 import Modal from 'react-modal';
 import SearchIndexContainer from '../search/search_index_container';
+import {merge} from 'lodash';
 
 class CreateCheckin extends React.Component {
   constructor(props) {
@@ -9,9 +10,9 @@ class CreateCheckin extends React.Component {
     this.state = {
       checkin: {
         beer_id: '',
-        brewery_id: '',
+        location: '',
         review: '',
-        rating: '',
+        rating: undefined,
         user_id: this.props.currentUserId,
       },
       modalIsOpen: true,
@@ -33,12 +34,12 @@ class CreateCheckin extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.props.selectedBeerId !== nextProps.selectedBeerId) {
-      this.setState({
+      this.setState(merge(this.state, {
         checkin:{
           beer_id: nextProps.selectedBeerId,
         },
         searchVal: nextProps.beers[nextProps.selectedBeerId].name
-      });
+      }));
     }
   }
 
@@ -49,15 +50,20 @@ class CreateCheckin extends React.Component {
           this.props.requestSearchBeers(this.state.searchVal);
         });
       } else {
-        this.setState({checkin: {
-          [field]: e.target.value}});
+        this.setState(
+          merge(this.state, {checkin: {
+          [field]: e.target.value}})
+        );
       }
     };
   }
 
   handleSubmit(e) {
+    console.log(this.state.checkin);
+    console.log(this.state);
     e.preventDefault();
     this.props.createCheckin(this.state.checkin);
+    this.props.history.push('/');
   }
 
   render() {
@@ -79,13 +85,13 @@ class CreateCheckin extends React.Component {
                      value={this.state.searchVal}
                      onChange={this.update('beer')}/>
             </label>
-            <label>Brewery:
-              <input type="text" placeholder="brewery"
-                     value={this.state.checkin.brewery_id}
-                     onChange={this.update('brewery')}/>
+            <label>Location:
+              <input type="text" placeholder="location"
+                     value={this.state.checkin.location}
+                     onChange={this.update('location')}/>
             </label>
             <label>Rating:
-              <input type="text" placeholder="rating"
+              <input type="dropdown" placeholder="rating"
                      value={this.state.checkin.rating}
                      onChange={this.update('rating')}/>
             </label>

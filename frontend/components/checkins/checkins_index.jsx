@@ -10,9 +10,14 @@ class CheckinsIndex extends React.Component {
   componentDidMount(){
     this.props.requestAllCheckins();
   }
+  // componentWillMount() {
+  //   this.props.requestAllCheckins();
+  // }
 
   render() {
+    console.log("the props", this.props);
     const { checkins } = this.props;
+    console.log(checkins);
     return (
       <section className='index-section'>
         <h1>All of the Checkins</h1>

@@ -1,2 +1,2 @@
-json.extract! checkin, :user_id, :brewery_id,
-  :beer_id, :rating, :review
+json.extract! checkin, :user_id, :location,
+  :beer_id, :rating, :review, :user, :beer

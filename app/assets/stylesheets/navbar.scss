@@ -33,15 +33,6 @@
   flex: 1;
 }
 
-.nav-link-parent{
-}
-
-.navlink-signup {
-  font: black;
-  font-weight: 700;
-  font-size: 20px,
-}
-
 .greeting {
   margin: 5px;
 }
@@ -77,4 +68,11 @@
   opacity: inherit;
   background-color: #E0D164;
   font-size: 12px;
+}
+
+
+.btn-round:hover {
+  border-radius: 5px;
+  background-color: #E0AB64;
+
 }

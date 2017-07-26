@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html, body {
-  height: 100%;
   background-image: url(http://res.cloudinary.com/dkeart1zy/image/upload/v1500499040/giphy_ibhdli.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,10 +11,6 @@ html, body {
 
 button {
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #E0AB64;
 }
 
 h2 {

@@ -7,13 +7,15 @@ class CheckinIndexItem extends React.Component{
   }
 
   render() {
-    console.log('this is an item', this.props);
     return (
       <div>
         <ul className="index-list-item">
-          <li>{this.props.checkin.beer_id}</li>
-          <li>{this.props.checkin.brewery_id}</li>
+          <li><img src={this.props.checkin.user.image_url} className="list-images"/></li>
+          <li>{this.props.checkin.user.username}</li>
+          <li>{this.props.checkin.beer.name}</li>
+          <li>{this.props.checkin.location}</li>
           <li>{this.props.checkin.rating}</li>
+          <li>{this.props.checkin.review}</li>
         </ul>
       </div>
     );

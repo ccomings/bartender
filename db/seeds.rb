@@ -37,8 +37,8 @@ Beer.create!(name: 'Arrogant Bastard Ale', description: 'Arrogant Bastard Ale is
 Beer.create!(name: 'Ruination IPA', description: 'So called because of the "ruinous" effect on your palate! This massive hop monster has a wonderfully delicious and intensely bitter flavor on a refreshing malt base. One taste and you can easily see why we call this brew "a liquid poem to the glory of the hop!" Those who seek, crave and rejoice in beers with big, bold, bitter character will find true nirvana in Stone Ruination IPA!',
   brewery_id: 4, abv: "8.2%", ibu: "100", image_url: "https://s3.amazonaws.com/brewerydbapi/beer/7cnuJq/upload_aC4vUP-medium.png")
 
-Checkin.create!(user_id: 1, brewery_id: 1, beer_id: 2, review: "It was good", rating: 4)
-Checkin.create!(user_id: 1, brewery_id: 2, beer_id: 7, review: "Yay!", rating: 5)
+Checkin.create!(user_id: 1, location: "home", beer_id: 2, review: "It was good", rating: 4)
+Checkin.create!(user_id: 1, location: 'the best bar', beer_id: 7, review: "Yay!", rating: 5)
 
 
 beer_styles = ["Ale", "Altbier", "Amber", "American", "Bock",

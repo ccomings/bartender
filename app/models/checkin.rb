@@ -4,12 +4,12 @@
 #
 #  id         :integer          not null, primary key
 #  user_id    :integer          not null
-#  brewery_id :integer
 #  beer_id    :integer          not null
 #  review     :string
 #  rating     :integer          not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  location   :string
 #
 
 class Checkin < ApplicationRecord
@@ -18,5 +18,4 @@ class Checkin < ApplicationRecord
 
   belongs_to :user
   belongs_to :beer
-  belongs_to :brewery
 end

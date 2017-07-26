@@ -35,12 +35,12 @@ class Navbar extends React.Component {
             </div>
             <div className="navbar-items navbar-right-side">
               <h3 className="greeting">Prost, {currentUser.username}!</h3>
-              <button onClick={() => {
+              <button className="btn-round" onClick={() => {
                   history.push('/profile');
                   }}>
                   <i className="fa fa-user fa-3x" aria-hidden="true"></i>
               </button>
-              <button onClick={logout}>
+              <button className="btn-round" onClick={logout}>
                 <i className="fa fa-sign-out fa-3x" aria-hidden="true"></i>
               </button>
 
