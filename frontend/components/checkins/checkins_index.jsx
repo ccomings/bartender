@@ -25,6 +25,7 @@ class CheckinsIndex extends React.Component {
           <CheckinIndexItem
             key={checkin.id}
             id={checkin.id}
+            time={checkin.created_at}
             checkin={checkin}/>)}
         </ul>
       </section>

@@ -25,20 +25,22 @@ class Navbar extends React.Component {
             <div className="navbar-items navbar-middle-side">
               <button className='square-buttons' onClick={() => {
                   history.push('/beers');
-                }}>Beers</button>
+                }}><h2 className="fancy-font">Beers</h2></button>
               <button className='square-buttons' onClick={() => {
                   history.push('/breweries');
-                }}>Breweries</button>
-              <button className='square-buttons' onClick={() => {
-                  history.push('/checkin');
-                }}>Checkin</button>
+                }}><h2>Breweries</h2></button>
             </div>
             <div className="navbar-items navbar-right-side">
+              <button className="btn-round" onClick={() => {
+                  history.push('/checkin');
+                }}>
+                <i className="fa fa-check fa-3x" aria-hidden="true"></i>
+              </button>
               <h3 className="greeting">Prost, {currentUser.username}!</h3>
               <button className="btn-round" onClick={() => {
                   history.push('/profile');
-                  }}>
-                  <i className="fa fa-user fa-3x" aria-hidden="true"></i>
+                }}>
+                <i className="fa fa-user fa-3x" aria-hidden="true"></i>
               </button>
               <button className="btn-round" onClick={logout}>
                 <i className="fa fa-sign-out fa-3x" aria-hidden="true"></i>

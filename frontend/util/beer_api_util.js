@@ -39,6 +39,5 @@ export const fetchSearchBeers = name => (
   $.ajax({
     method: "GET",
     url: `/api/beers/?query=${name}`
-    
   })
 );

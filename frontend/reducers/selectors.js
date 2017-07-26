@@ -14,6 +14,17 @@ export const selectOneBeer = ( { beers }, id ) => {
   return beer;
 };
 
+// export const selectBreweryBeers = ( { beers }, brewery_id ) => {
+//   let breweryBeers = [];
+//   if (Object.keys(beers)) {
+//     Object.keys(beers).forEach(brewery_id => {
+//       if (beers[brewery_id] === brewery_id) {
+//         breweryBeers.push(beer[id]);
+//       }
+//     });
+//   }
+// };
+
 export const selectAllCheckins = ({ checkins }) => values(checkins);
 
 export const selectSearchBeers = ({ beers }, searchVal ) => {

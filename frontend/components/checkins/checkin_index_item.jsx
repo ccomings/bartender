@@ -7,10 +7,19 @@ class CheckinIndexItem extends React.Component{
   }
 
   render() {
+    const image = () => {
+      if (this.props.checkin.user.image_url === null) {
+        return "http://res.cloudinary.com/dkeart1zy/image/upload/v1500605715/sample.jpg";
+      } else {
+        return this.props.checkin.user.image_url;
+      }
+    };
     return (
       <div>
         <ul className="index-list-item">
-          <li><img src={this.props.checkin.user.image_url} className="list-images"/></li>
+          <li>
+            <img src={image()} className="list-images"/>
+          </li>
           <li>{this.props.checkin.user.username}</li>
           <li>{this.props.checkin.beer.name}</li>
           <li>{this.props.checkin.location}</li>
