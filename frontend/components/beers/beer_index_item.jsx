@@ -18,12 +18,24 @@ class BeerIndexItem extends React.Component{
       <div>
         <Link to={`/beers/${this.props.id}`}>
           <ul className="index-list-ul">
-            <li><img src={image()} className="list-images"/>
+            <li className="index-list-li">
+              <img src={image()} className="list-images"/>
             </li>
-            <li><h4>{this.props.beer.name}</h4></li>
-            <li><h4>{this.props.beer.brewery.name}</h4></li>
-            <li><h4>{this.props.beer.abv}</h4></li>
-            <li><h4>{this.props.beer.ibu}</h4></li>
+            <li  className="index-list-li">
+              <h3 className="list-title">{this.props.beer.name}</h3>
+              <ul className="index-ul-details">
+                <li className="index-ul-details-left">
+                  <h4 className="index-ul-details-left-text">Brewery</h4>
+                  <h4 className="index-ul-details-left-text">ABV</h4>
+                  <h4 className="index-ul-details-left-text">IBU</h4>
+                </li>
+                <li className="index-ul-details-right">
+                  <h4 className="index-ul-details-right-text">{this.props.beer.brewery.name}</h4>
+                  <h4 className="index-ul-details-right-text">{this.props.beer.abv}</h4>
+                  <h4 className="index-ul-details-right-text">{this.props.beer.ibu}</h4>
+                </li>
+              </ul>
+            </li>
           </ul>
         </Link>
       </div>
