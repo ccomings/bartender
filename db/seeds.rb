@@ -41,7 +41,7 @@ Brewery.create!(name: 'Ale Industires', country: 'United States', state: 'Califo
 Brewery.create!(name: 'Cleophus Quealy', country: 'United States', state: 'California', city: 'San Leandro', website: 'cleophusquealy.com', image_url: 'http://static1.squarespace.com/static/51c689cee4b04f9194673d16/t/5743a9384d088e1e7428e243/1499841031125/?format=1500w')
 Brewery.create!(name: 'Stone Brewing', country: 'United States', state: 'California', city: 'San Diego', website: 'http://www.stonebrewing.com/', image_url: 'https://s3.amazonaws.com/brewerydbapi/brewery/709vEK/upload_6xRCQE-medium.png')
 
-10.times do
+30.times do
   Beer.create!(
     name: Faker::Beer.unique.name,
     style: Faker::Beer.style,
@@ -49,7 +49,7 @@ Brewery.create!(name: 'Stone Brewing', country: 'United States', state: 'Califor
     abv: Faker::Beer.alcohol,
     description: Faker::Lorem.sentence(3),
     brewery_id: Random.rand(1..9)
-    
+
   )
 end
 
