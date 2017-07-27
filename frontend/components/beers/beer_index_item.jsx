@@ -17,7 +17,7 @@ class BeerIndexItem extends React.Component{
     return (
       <div>
         <Link to={`/beers/${this.props.id}`}>
-          <ul className="index-list-item">
+          <ul className="index-list-ul">
             <li><img src={image()} className="list-images"/>
             </li>
             <li><h4>{this.props.beer.name}</h4></li>

@@ -17,14 +17,16 @@ class BeerShow extends React.Component {
       return <h1>""</h1>;
     } else {
       return(
-        <section className="show-page-section">
-          <img src={selectedBeer.image_url} className="show-page-images"/>
-          <h1>{selectedBeer.name}</h1>
-          <h3>{selectedBeer.description}</h3>
-          <h3>{selectedBeer.abv}</h3>
-          <h3>{selectedBeer.ibu}</h3>
-          <h3><Link to={`/breweries/${selectedBeer.brewery.id}`}>{selectedBeer.brewery.name}</Link></h3>
-        </section>
+        <div className='show-page-section-parent'>
+          <section className="show-page-section">
+            <img src={selectedBeer.image_url} className="show-page-images"/>
+            <h1>{selectedBeer.name}</h1>
+            <h3>{selectedBeer.description}</h3>
+            <h3>{selectedBeer.abv}</h3>
+            <h3>{selectedBeer.ibu}</h3>
+            <h3><Link to={`/breweries/${selectedBeer.brewery.id}`}>{selectedBeer.brewery.name}</Link></h3>
+          </section>
+        </div>
       );
     }
   }

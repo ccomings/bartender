@@ -15,7 +15,9 @@ class BeersIndex extends React.Component {
     const { beers } = this.props;
     return (
       <section className='index-section'>
-        <h1>All of the Beers</h1>
+        <div className='page-header-container'>
+          <h1 className="page-header">Beers</h1>
+        </div>
 
         <ul className="index-list">{beers.length > 0 ? beers.map(beer =>
           <BeerIndexItem key={beer.id} id={beer.id} beer={beer}/>) : ""}

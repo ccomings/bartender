@@ -23,23 +23,25 @@ class BreweryShow extends React.Component {
         )
       );
       return(
-        <section className="show-page-section">
-          <ul className='show-page-ul'>
-            <li className='show-page-li'>
-              <img src={selectedBrewery.image_url} className="show-page-images"/>
-              <h1>Brewery | {selectedBrewery.name}</h1>
-              <h3>City | {selectedBrewery.city}</h3>
-              <h3>State | {selectedBrewery.state}</h3>
-              <h3>Country | {selectedBrewery.country}</h3>
-            </li>
-            <li className='show-page-li'>
-              <ul>{breweryBeers}</ul>
-            </li>
-            <li className='show-page-li'>
-              <CreateBeerContainer />
-            </li>
-          </ul>
-        </section>
+        <div className='show-page-section-parent'>
+          <section className="show-page-section">
+            <ul className='show-page-ul'>
+              <li className='show-page-li'>
+                <img src={selectedBrewery.image_url} className="show-page-images"/>
+                <h3>Brewery | {selectedBrewery.name}</h3>
+                <h3>City | {selectedBrewery.city}</h3>
+                <h3>State | {selectedBrewery.state}</h3>
+                <h3>Country | {selectedBrewery.country}</h3>
+              </li>
+              <li className='show-page-li'>
+                <ul>{breweryBeers}</ul>
+              </li>
+              <li className='show-page-li'>
+                <CreateBeerContainer />
+              </li>
+            </ul>
+          </section>
+        </div>
       );
     }
   }

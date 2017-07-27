@@ -16,7 +16,7 @@ class CheckinIndexItem extends React.Component{
     };
     return (
       <div>
-        <ul className="index-list-item">
+        <ul className="index-list-ul">
           <li>
             <img src={image()} className="list-images"/>
           </li>

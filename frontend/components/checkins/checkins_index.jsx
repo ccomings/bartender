@@ -15,7 +15,7 @@ class CheckinsIndex extends React.Component {
     return (
       <section className='index-section'>
         <div className='page-header-container'>
-          <h1 className="page-header">All of the Checkins</h1>
+          <h1 className="page-header">Checkins</h1>
         </div>
         <ul className="index-list">{checkins.map(checkin =>
           <CheckinIndexItem
