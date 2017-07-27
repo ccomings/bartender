@@ -94,10 +94,11 @@ class SessionForm extends React.Component {
               <li className='login-form-list-items'>
                 <input type='submit' value='Submit' className="login-input-submit"/>
               </li>
+              <li className='login-form-list-items'>
+                <button onClick={this.handleDemo} className='demo-login'
+                  value='Demo Login' className="login-input-submit">Demo Login</button>
+              </li>
             </ul>
-          </form>
-          <form onSubmit={this.handleDemo} className='demo-login'>
-            <input type='submit' value='Demo Login' className="login-input-submit"/>
           </form>
         </div>
       </div>

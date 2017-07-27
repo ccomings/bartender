@@ -7,6 +7,7 @@ class CreateBeers < ActiveRecord::Migration[5.1]
       t.integer :brewery_id, null: false
       t.string :abv
       t.string :ibu
+      t.string :style
       t.string :image_url
       t.timestamps
     end

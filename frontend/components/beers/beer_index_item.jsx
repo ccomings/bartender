@@ -9,7 +9,7 @@ class BeerIndexItem extends React.Component{
   render() {
     const image = () => {
       if (!this.props.beer.image_url ) {
-        return "http://fullmoonbrewwork.com/wp-content/uploads/2014/06/FMBW_Beers_Phuket-Lager-300x300.png";
+        return "http://res.cloudinary.com/dkeart1zy/image/upload/c_scale,w_200/v1501190263/FMBW_Beers_Phuket-Lager-300x300_vd3csi.png";
       } else {
         return this.props.beer.image_url;
       }

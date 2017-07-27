@@ -16,6 +16,11 @@
 
 }
 
+#checkin-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .input-field {
   width: 250px;
   height: 24px;

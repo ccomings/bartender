@@ -15,8 +15,8 @@ class CheckinIndexItem extends React.Component{
       }
     };
     return (
-      <div>
-        <ul className="index-list-ul">
+
+        <ul key={this.props.checkin.id} className="index-list-ul">
           <li>
             <img src={image()} className="list-images"/>
           </li>
@@ -24,7 +24,6 @@ class CheckinIndexItem extends React.Component{
           <li>Review | {this.props.checkin.review}</li>
           <li>Rating | {this.props.checkin.rating}</li>
         </ul>
-      </div>
     );
   }
 }
