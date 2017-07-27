@@ -76,52 +76,42 @@ class CreateCheckin extends React.Component {
         >
         <div className='checkin-form-container'>
           <div className='checkin-form-box'>
-              <form onSubmit={this.handleSubmit}>
-                <ul>
-                  <li className='login-form-list-items'>
-                    <h2>Checkin</h2>
-                  </li>
-                  <li className='login-form-list-items'>
-                    <label className='login-input-container'>
-                      <input className="input-field"
-                             type="text" placeholder="beer"
-                             value={this.state.searchVal}
-                             onChange={this.update('beer')}/>
-                    </label>
-                  </li>
-                  <li className='login-form-list-items'>
-                    <label className='login-input-container'>
-                      <input className="input-field"
-                             type="text" placeholder="location"
-                             value={this.state.checkin.location}
-                             onChange={this.update('location')}/>
-                    </label>
-                  </li>
-                  <li className='login-form-list-items'>
-                    <label className='login-input-container'>
-                      <input className="input-field"
-                             type="number" placeholder="rating"
-                             value={this.state.checkin.rating}
-                             onChange={this.update('rating')}
-                             min='1' max='5'/>
-                    </label>
-                  </li>
-                  <li className='login-form-list-items'>
-                    <label className='login-input-container'>
-                      <input className="input-field text"
-                             type="textbox" placeholder="review"
-                             value={this.state.checkin.review}
-                             onChange={this.update('review')}/>
-                    </label>
-                  </li>
-                  <li className='login-form-list-items'>
-                    <input type="submit" value="Checkin" className="login-input-submit"/>
-                  </li>
-                </ul>
-              </form>
-              <div className="modal-scolling">
-                <SearchIndexContainer />
+            <h2>Check-in!</h2>
+            <form onSubmit={this.handleSubmit} className='checkin-form'>
+              <div className='checkin-form-left'>
+                <label className='login-input-container ma'>
+                  <input className="input-field"
+                    type="text" placeholder="start typing a beer name"
+                    value={this.state.searchVal}
+                    onChange={this.update('beer')}/>
+                </label>
+                <div className="modal-scolling ma">
+                  <SearchIndexContainer />
+                </div>
               </div>
+              <div className='checkin-form-right'>
+                <label className='login-input-container maYX2'>
+                  <input className="input-field"
+                    type="text" placeholder="where are you drinking"
+                    value={this.state.checkin.location}
+                    onChange={this.update('location')}/>
+                </label>
+                <label className='login-input-container ma2'>
+                  <input className="input-field"
+                    type="number" placeholder="rating (1..5)"
+                    value={this.state.checkin.rating}
+                    onChange={this.update('rating')}
+                    min='1' max='5'/>
+                </label>
+                <label className='login-input-container ma2'>
+                  <input className="input-field text"
+                    type="textbox" placeholder="how was the beer"
+                    value={this.state.checkin.review}
+                    onChange={this.update('review')}/>
+                </label>
+                <input type="submit" value="Checkin" className="maC login-input-submit"/>
+              </div>
+            </form>
           </div>
         </div>
       </Modal>

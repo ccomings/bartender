@@ -6,8 +6,8 @@ import { selectAllBeers } from '../../reducers/selectors';
 import SearchIndex from './search_index';
 
 const mapStateToProps = state => ({
-  items: selectAllBeers(state)
-
+  items: selectAllBeers(state),
+  selectedBeerId: state.session.selectedBeerId
     // items: selectSearchBeers(state, state.session.searchVal, state.session.selectedBeerId)
 });
 
