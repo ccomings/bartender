@@ -72,38 +72,58 @@ class CreateCheckin extends React.Component {
         isOpen={this.state.modalIsOpen}
         onRequestClose={this.closeModal}
         contentLabel="Create Checkin"
+        className="create-checkin-modal"
         >
-        <div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <form onSubmit={this.handleSubmit}>
-            <label>Beers:
-              <input type="text" placeholder="beer"
-                     value={this.state.searchVal}
-                     onChange={this.update('beer')}/>
-            </label>
-            <label>Location:
-              <input type="text" placeholder="location"
-                     value={this.state.checkin.location}
-                     onChange={this.update('location')}/>
-            </label>
-            <label>Rating:
-              <input type="dropdown" placeholder="rating"
-                     value={this.state.checkin.rating}
-                     onChange={this.update('rating')}/>
-            </label>
-            <label>Review:
-              <input type="text" placeholder="review"
-                     value={this.state.checkin.review}
-                     onChange={this.update('review')}/>
-            </label>
-            <input type="submit" value="Checkin"/>
-          </form>
+        <div className='checkin-form-container'>
+          <div className='checkin-form-box'>
+              <form onSubmit={this.handleSubmit}>
+                <ul>
+                  <li className='login-form-list-items'>
+                    <h2>Checkin</h2>
+                  </li>
+                  <li className='login-form-list-items'>
+                    <label className='login-input-container'>
+                      <input className="input-field"
+                             type="text" placeholder="beer"
+                             value={this.state.searchVal}
+                             onChange={this.update('beer')}/>
+                    </label>
+                  </li>
+                  <li className='login-form-list-items'>
+                    <label className='login-input-container'>
+                      <input className="input-field"
+                             type="text" placeholder="location"
+                             value={this.state.checkin.location}
+                             onChange={this.update('location')}/>
+                    </label>
+                  </li>
+                  <li className='login-form-list-items'>
+                    <label className='login-input-container'>
+                      <input className="input-field"
+                             type="dropdown" placeholder="rating"
+                             value={this.state.checkin.rating}
+                             onChange={this.update('rating')}
+                             />
+                    </label>
+                  </li>
+                  <li className='login-form-list-items'>
+                    <label className='login-input-container'>
+                      <input className="input-field text"
+                             type="textbox" placeholder="review"
+                             value={this.state.checkin.review}
+                             onChange={this.update('review')}/>
+                    </label>
+                  </li>
+                  <li className='login-form-list-items'>
+                    <input type="submit" value="Checkin" className="login-input-submit"/>
+                  </li>
+                </ul>
+              </form>
+              <div className="modal-scolling">
+                <SearchIndexContainer />
+              </div>
+          </div>
         </div>
-        <SearchIndexContainer />
       </Modal>
     );
   }
