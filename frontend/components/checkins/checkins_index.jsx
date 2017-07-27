@@ -3,16 +3,10 @@ import { withRouter, Link } from 'react-router-dom';
 import CheckinIndexItem from './checkin_index_item';
 
 class CheckinsIndex extends React.Component {
-  // constructor(props){
-  //   super(props);
-  // }
 
   componentDidMount(){
     this.props.requestAllCheckins();
   }
-  // componentWillMount() {
-  //   this.props.requestAllCheckins();
-  // }
 
   render() {
     console.log("the props", this.props);
@@ -20,7 +14,9 @@ class CheckinsIndex extends React.Component {
     console.log(checkins);
     return (
       <section className='index-section'>
-        <h1>All of the Checkins</h1>
+        <div className='page-header-container'>
+          <h1 className="page-header">All of the Checkins</h1>
+        </div>
         <ul className="index-list">{checkins.map(checkin =>
           <CheckinIndexItem
             key={checkin.id}

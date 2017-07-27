@@ -20,11 +20,9 @@ class CheckinIndexItem extends React.Component{
           <li>
             <img src={image()} className="list-images"/>
           </li>
-          <li>{this.props.checkin.user.username}</li>
-          <li>{this.props.checkin.beer.name}</li>
-          <li>{this.props.checkin.location}</li>
-          <li>{this.props.checkin.rating}</li>
-          <li>{this.props.checkin.review}</li>
+          <li>{this.props.checkin.user.username} is drinking a {this.props.checkin.beer.name} at {this.props.checkin.location}</li>
+          <li>Review | {this.props.checkin.review}</li>
+          <li>Rating | {this.props.checkin.rating}</li>
         </ul>
       </div>
     );
