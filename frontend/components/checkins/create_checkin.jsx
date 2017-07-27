@@ -100,10 +100,10 @@ class CreateCheckin extends React.Component {
                   <li className='login-form-list-items'>
                     <label className='login-input-container'>
                       <input className="input-field"
-                             type="dropdown" placeholder="rating"
+                             type="number" placeholder="rating"
                              value={this.state.checkin.rating}
                              onChange={this.update('rating')}
-                             />
+                             min='1' max='5'/>
                     </label>
                   </li>
                   <li className='login-form-list-items'>
