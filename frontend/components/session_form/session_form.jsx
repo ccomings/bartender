@@ -18,6 +18,10 @@ class SessionForm extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    this.props.clearErrors();
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -95,8 +99,8 @@ class SessionForm extends React.Component {
                 <input type='submit' value='Submit' className="login-input-submit"/>
               </li>
               <li className='login-form-list-items'>
-                <button onClick={this.handleDemo} className='demo-login'
-                  value='Demo Login' className="login-input-submit">Demo Login</button>
+                <button onClick={this.handleDemo} className='demo-login login-input-submit'
+                  value='Demo Login'>Demo Login</button>
               </li>
             </ul>
           </form>

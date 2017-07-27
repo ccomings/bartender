@@ -5,6 +5,7 @@ import {
   RECEIVE_ERRORS,
   RECEIVE_SEARCH,
   RECEIVE_SELECTED_BEER_ID,
+  CLEAR_ERRORS,
 } from '../actions/session_actions';
 
 const nullUser = Object.freeze({
@@ -33,6 +34,8 @@ const SessionReducer = (state = nullUser, action) => {
     case RECEIVE_SEARCH:
       const searchVal = action.searchVal;
       return merge({}, state, {searchVal});
+    case CLEAR_ERRORS:
+      return Object.assign({}, state, {errors:[]});
     default:
       return state;
   }
