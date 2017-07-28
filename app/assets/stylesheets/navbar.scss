@@ -10,27 +10,30 @@
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   max-width: 1000px;
 }
 
+.navbar-left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .navbar-middle-side {
   // align-content: space-between;
   display: flex;
-  justify-content: space-around;
-
+  flex-direction: row;
 }
 
 .navbar-right-side {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-
+  // justify-content: flex-end;
 }
 
 .navbar-items {
-  flex: 1;
+  // flex: 1;
 }
 
 .greeting {
@@ -52,6 +55,22 @@
   border-radius: 10px;
   padding: 0 10px;
   // margin: 5;
+}
+
+.square-buttons-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 60px;
+  background-color: #E0D164;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 7px;
+}
+
+.square-buttons-small:hover {
+  background-color: #E0AB64;
 
 }
 
@@ -65,7 +84,7 @@
   width: 50px;
   border-radius: 50%;
   margin-left: 5px;
-  opacity: inherit;
+  // opacity: inherit;
   background-color: #E0D164;
   font-size: 12px;
 }
@@ -73,6 +92,20 @@
 
 .btn-round:hover {
   border-radius: 5px;
+  background-color: #E0AB64;
+
+}
+
+.checkin-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #E0D164;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.checkin-btn:hover{
   background-color: #E0AB64;
 
 }
