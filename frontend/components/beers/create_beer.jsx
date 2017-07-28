@@ -18,7 +18,7 @@ class CreateBeer extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.createBeer(this.state);
-
+    window.location.reload();
   }
 
   update(field) {

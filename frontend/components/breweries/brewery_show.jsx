@@ -19,7 +19,9 @@ class BreweryShow extends React.Component {
       return <h1>""</h1>;
     } else {
       const breweryBeers = selectedBrewery.beers.map(beer => (
-        <li className="search-index-item" key={beer.id}><Link to={`/beers/${beer.id}`}>{beer.name}</Link></li>
+          <Link to={`/beers/${beer.id}`}>
+            <li className="search-index-item" key={beer.id}>{beer.name}</li>
+          </Link>
         )
       );
       return(

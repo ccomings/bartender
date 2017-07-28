@@ -22,7 +22,17 @@ class CheckinIndexItem extends React.Component{
               <div className="paX2">
                 <img src={image()} className="list-images"/>
               </div>
-              <h4 className="paX2">{this.props.checkin.user.username} is drinking a {this.props.checkin.beer.name} at {this.props.checkin.location}</h4>
+              <h4 className="paX2">
+                {this.props.checkin.user.username} is drinking a
+                <br/>
+                <span className='nowrap'>
+                  <Link className='chkn-beer' to={`/beers/${this.props.checkin.beer.id}`}>
+                    {this.props.checkin.beer.name}
+                  </Link>
+                </span>
+                <br/>
+                at {this.props.checkin.location}
+              </h4>
             </div>
             <div className='checkin-item-ls'>
               <div className='chkn-itm-ls-labels'>

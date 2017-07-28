@@ -1,24 +1,28 @@
-# README
+# Beertendr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Beertendr][live-link] is a full stack web application inspired by Untapped. The goal of our site is to connect users with breweries, beers, and other users around the world. The app provides functionality to add beers to a brewery, 'checkin' with a beer, and fully navigate between beers, breweries, and checkins. Beertendr utilizes Ruby on Rails for the backend, PostgreSQL database, and React/Redux on the front end.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+### Checkins
+No need to navigate to a beer page to checkin. Create a checkin from any screen.
 
-* System dependencies
+### Breweries and Beers
+Seamlessly navigate through breweries, beers, and checkins.
 
-* Configuration
 
-* Database creation
+## Future Features
 
-* Database initialization
+* Editing Profiles
+* Likes of Checkins
+* Friends/follows
+* Interfacing with the BreweryDB.com api for complete and robust database
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
+
+
+[live-link]: www.beertendr.co

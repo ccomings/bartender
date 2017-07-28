@@ -89,7 +89,20 @@
   margin: auto;
 }
 
+.beer-show {
+  display: flex;
+  flex-direction: row;
+}
 
+.beer-brewery {
+  background-color: #E0D164;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.beer-brewery:hover {
+  background-color: #7d8a1d;
+}
 
 .create-beer-form {
 
