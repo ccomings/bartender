@@ -11,8 +11,6 @@ const BeersReducer = (state = {}, action) => {
     case RECEIVE_ALL_BEERS:
       return action.beers;
     case RECEIVE_ONE_BEER:
-      console.log("this is beer", action.beer);
-      console.log("this is state", state);
       const newBeer = merge({}, state);
       newBeer[action.beer.id] = action.beer;
       return newBeer;

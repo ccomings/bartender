@@ -9,9 +9,7 @@ class CheckinsIndex extends React.Component {
   }
 
   render() {
-    console.log("the props", this.props);
     const { checkins } = this.props;
-    console.log(checkins);
     return (
       <section className='index-section'>
         <div className='page-header-container'>

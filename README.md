@@ -7,6 +7,8 @@
 ### Checkins
 No need to navigate to a beer page to checkin. Create a checkin from any screen.
 
+
+
 ### Breweries and Beers
 Seamlessly navigate through breweries, beers, and checkins.
 

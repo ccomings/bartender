@@ -59,8 +59,6 @@ class CreateCheckin extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log(this.state.checkin);
-    console.log(this.state);
     e.preventDefault();
     this.props.createCheckin(this.state.checkin);
     this.props.history.push('/');
