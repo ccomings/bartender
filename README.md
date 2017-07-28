@@ -18,11 +18,14 @@ Selectors were designed for each and their respective subcomponents to optimize 
 
 ## Future Features
 
-* Editing Profiles
-* Likes of Checkins
-* Friends/follows
-* Interfacing with the BreweryDB.com api for complete and robust database
-
+#### Editing Profiles
+Allow for editing of user profiles
+#### Likes of Checkins
+Create frontend and backend for 'likes'
+#### Friends/follows
+Allow users to friend and follow each other's checkins in a separate Checkin feed.
+#### Interface with BreweryDB
+Interfacing with the BreweryDB.com api for complete and robust database.
 
 
 
