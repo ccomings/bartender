@@ -16,14 +16,26 @@ class CheckinIndexItem extends React.Component{
     };
     return (
 
-        <ul key={this.props.checkin.id} className="index-list-ul">
-          <li>
-            <img src={image()} className="list-images"/>
-          </li>
-          <div>{this.props.checkin.user.username} is drinking a {this.props.checkin.beer.name} at {this.props.checkin.location}</div>
-          <div>{this.props.checkin.review}</div>
-          <div>{this.props.checkin.rating}</div>
-        </ul>
+        <div key={this.props.checkin.id} className="checkin-item-parent">
+          <div className='checkin-item'>
+            <div className='checkin-item-rs'>
+              <div className="paX2">
+                <img src={image()} className="list-images"/>
+              </div>
+              <h4 className="paX2">{this.props.checkin.user.username} is drinking a {this.props.checkin.beer.name} at {this.props.checkin.location}</h4>
+            </div>
+            <div className='checkin-item-ls'>
+              <div className='chkn-itm-ls-labels'>
+                <h4 className="index-ul-details-left-text">Review</h4>
+                <h4 className="index-ul-details-left-text">Rating</h4>
+              </div>
+              <div className='chkn-itm-rs-labels'>
+                <h4 className="index-ul-details-right-text">{this.props.checkin.review}</h4>
+                <h4 className="index-ul-details-right-text">{this.props.checkin.rating}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
     );
   }
 }

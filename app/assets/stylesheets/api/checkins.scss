@@ -2,6 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.checkin-item-parent {
+  padding: 5px;
+  margin: 10px;
+  background-color: #E0AB64;
+  // opacity: .90;
+  // border: solid 1px black;
+  border-radius: 10px;
+}
+
+.checkin-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.checkin-item-rs {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  // align-items: space-between;
+  // flex: 1;
+}
+
+.checkin-item-ls {
+  // flex: 1;
+  display: flex;
+  flex-direction: row;
+  width: 300px
+  // justify-content: space-between;
+}
+
+.chkn-itm-ls-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.chkn-itm-rs-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .create-checkin-modal {
   position: fixed;
   top: 50%;
@@ -100,6 +145,16 @@
   margin: 10px;
 }
 
+.paX2 {
+  padding: 0 10px;
+}
+
+.paY {
+  padding: 5px 0;
+}
+.paY2{
+  padding: 10px 0;
+}
 .maC {
   margin: auto;
 }
